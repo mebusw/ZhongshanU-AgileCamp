@@ -18,7 +18,9 @@ def signup(request):
 
 
 def verify(request):	
-	usr = request.POT.get('username','')
+	usr = request.POST.get('username','')
 	pwd = request.POST.get('password','')
 	mail = request.POST.get('email','')
-	
+	if(1):
+		return render(request, 'sina/verified.html',
+		{'msg': 'Hello ' + usr +', we sent a verified email to ' + mail})
