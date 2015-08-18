@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <script type="text/javascript" src="/static/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/modernizer.js"></script>
+    <script style="text/javascript" src="/static/js/bootstrap-modal.js"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" media="screen">
+    <link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="/static/css/groundwork.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("a").click(function(){
+                alert("haha")
+                var id = $(this).attr("id")
+                if(id == "login"){
+                    document.getElementById("example").style.display=""
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+     <header class="padded">
+        <div class="container">
+            <div class="row">
+                <div class="one half">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/img/first.png" style="height: 50px; width: 120px; border: NONE"/>
+			    </div>
+                <div class="one half">
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="register">注册</a></p>
+                </div>
+            </div>
+            <nav role="navigation" class="nav gap-top">
+                <ul role="menubar">
+                    <li><a id="dashboard"><i class="icon-home"></i> 首页</a></li>
+                    <li><a id="homepage"><i class="icon-male"></i> 个人主页</a></li>
+                    <li><a id="necessity"><i class="icon-upload-alt"></i> 发布需求</a></li>
+                    <li><a id="add"><i class="icon-plus"></i> 闲置物品</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+        <div id="example" class="modal hide fade in" style="display: none; ">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+					<h3>This is a Modal Heading</h3>
+			</div>
+			<div class="modal-body">
+				<h4>Text in a modal</h4>
+				<p>You can add some text here.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn btn-success">Call to action</a>
+				<a href="#" class="btn" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+</body>
+</html>

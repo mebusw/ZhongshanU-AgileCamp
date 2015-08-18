@@ -1,0 +1,73 @@
+		.pageHeader{
+			background:url(http://academic.research.microsoft.com/images/header_bkg.jpg);
+			background-position:left top;
+			background-repeat:repeat-x;
+			position:relative;
+			z-index:1001
+		}
+		.searchBarBlock{
+			background-position:20px;
+			bottom;
+			background-repeat:no-repeat;
+			margin:0 auto;
+			padding-top:100px;
+			width:900px;
+			position:relative;
+			height:100px
+		}
+		.searchBarBlock .logo1{
+			width:20%;
+			height:20px;
+			position:absolute;
+			left:0px
+			top:92px
+		}
+		.searchBarBlock .searchBar{
+			position:absolute;
+			left:170px;
+			height:37px;
+			width:70%;
+			top:115px;
+		}
+		.searchBar .searchTxt{
+			position:relative;
+			float:left;
+			margin-left:10px;
+			height:37px;
+			width:400px;
+			border:1px;
+		}
+		.searchBar .div-select{
+			float:left;
+			width:70px;
+			height:30px;
+			margin-left:3px; 
+			border:1px;
+			position: relative;
+		}
+		.searchBar .div-imageButton{
+			float:left;
+			margin-left:150px;
+			border:1px;
+			width:40px;
+		}
+		.div-singleSelector{
+			position: absolute;
+			width:70px;
+		}
+		.advanceSearch{
+			position:absolute;
+			top:20px;
+			left:35px;
+			height:12px;
+			width: 80px;
+			font-size:8px;
+		}
+
+
+
+		.searchTextBox{
+			width:400px;
+			font-size:14px;
+			padding-top:1px;
+		}

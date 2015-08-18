@@ -1,0 +1,162 @@
+    .singlePaper{
+
+    }
+	.pageHeader{
+		background:url(http://academic.research.microsoft.com/images/header_bkg.jpg);
+		background-position:left top;
+		background-repeat:repeat-x;
+		position:relative;
+		height:100px;
+		z-index:1001
+	}
+    .searchBarBlock{
+		bottom;
+		background-repeat:no-repeat;
+		width:900px;
+		position:relative;
+		height:30px;
+		padding-top:30px;
+	}
+	.searchBarBlock .logo1{
+		position:absolute;
+		width:100px;
+		height:20px;
+		left:0px
+		top:30px;
+	}
+	.searchBarBlock .searchBar{
+		position:absolute;
+		left:170px;
+		height:37px;
+		width:70%;
+		top:60px;
+	}
+	.searchBar .searchTxt{
+		position:relative;
+		float:left;
+		margin-left:10px;
+		height:37px;
+		width:350px;
+		border:1px;
+	}
+	.searchTextBox{
+		height:20px;
+		width:350px;
+	}
+	.searchBar .div-select{
+		position: relative;
+		float:left;
+		width:70px;
+		height:30px;
+		margin-left:3px; 
+		border:1px;
+		left:8px;
+		
+	}
+	.searchBar .div-imageButton{
+		float: left;
+		margin-left:95px;
+		width:40px;
+	}
+	.div-singleSelector{
+		position: absolute;
+		width:70px;
+	}
+	.advanceSearch{
+		position:absolute;
+		top:20px;
+		left:35px;
+		height:12px;
+		width: 80px;
+		font-size:8px;
+	}
+	.pageContent{
+		position: absolute;
+		height:800px;
+		width:1000px;
+	}
+	.pageContent .category{
+		background: url(/static/cateBack.png);
+		float:left;
+		height:800px;
+		width:250px;
+	}
+	.pageContent .paperContent{
+		background: url(/static/contentBack.png);
+		float:right;
+		height:800px;
+		width:750px;
+
+	}
+	.category .cateItem{
+		height:30px;
+		width: 250px;
+
+	}
+	.cateTitle{
+		height:20px;
+	}
+	.cateTitle p{
+		font-size: 11pt;
+		font-weight: bolder;
+		font-family: "STKaiti";
+	}
+	.cateItem a{
+		font-size:12pt;
+		font-family: "Apple LiSung Light";
+		font color: green;
+		text-decoration: none;
+	}
+	.paperContent .ContentTitle{
+		height:30px;
+		margin-left: 20px;
+	}
+	.ContentTitle p{
+		font-size:11pt;
+		font-family: "STKaiti";
+	}
+	.paperContent .PaperItem{
+		height:200px;
+		width:600px;
+		margin-left: 20px;
+	}
+	.PaperItem .PaperTitle{
+		height:30px;
+		width:600px;
+	}
+	.PaperTitle a{
+		font-size: 17pt;
+		font-family: "STKaiti";
+	}
+	.PaperItem .PaperInfo{
+		height:20px;;
+		width:600px;
+	}
+	.PaperInfo p{
+		font-size: 14pt;
+		font-family: "Cooper";
+	}
+	.PaperItem .PaperAbstract{
+		height:50px;
+		width:600px;
+	}
+	.PaperAbstract p{
+		font-size:11pt;
+
+	}
+	.PaperItem .PaperVenue{
+		height:20px;
+		width:600px;
+	}
+	.PaperVenue p{
+		font-size: 13pt;
+		font-family: "STKaiti";
+	}
+	.PaperItem .PaperDate{
+		height:20px;
+		width:600px;
+	}
+	.PaperDate p{
+		font-size: 12pt;
+		font-family: "STKaiti";
+	}
