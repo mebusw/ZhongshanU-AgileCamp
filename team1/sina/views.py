@@ -14,5 +14,11 @@ def index(request):
 		return render(request, 'sina/fail.html')
 
 def signup(request):
-	su = request.POST.get('su','')
 	return render(request, 'sina/signup.html')
+
+
+def verify(request):	
+	usr = request.POT.get('username','')
+	pwd = request.POST.get('password','')
+	mail = request.POST.get('email','')
+	

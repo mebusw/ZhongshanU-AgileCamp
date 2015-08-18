@@ -1,5 +1,6 @@
 <h1>sign up page </h1>
-<form action='.\' method='post'>
+<form action='./' method='post'>
+	{% csrf_token %}
 	<label>Username:</label>
 	<input name="username"/>
 	<br/>
