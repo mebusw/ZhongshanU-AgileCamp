@@ -1,0 +1,70 @@
+<h1>回答：</h1>
+{{usr}}
+{{pwd}}
+<form action='./' method ='post'>
+	{% csrf_token %}
+	<input style="width:111px;height:40px"，name = 'username'/>
+	<button style="width:111px;height:40px；background:yellow;color:red"，class = "btn btn-primary">搜索</button>
+	<br/>
+	<br/>
+
+	<div style="left: 300px; position: absolute; top: 300px;">位置300,300</div>
+	
+	<INPUT value="搜索" NAME="user_pass" TYPE="text" SIZE="29" onmouseover="this.style.borderColor='black';this.style.backgroundColor='plum'"style="width: 106; height: 21"onmouseout="this.style.borderColor='black';this.style.backgroundColor='#ffffff'" style="border-width:1px;border-color=black">
+
+	<a href="http://www.baidu.com" target=_blank>百度</a>
+
+	<select name="selectAge" id="selectAge">   
+        <option value="1">按地点</option>   
+        <option value="2">国内</option>   
+        <option value="3">欧洲</option>   
+        <option value="4">亚洲</option>   
+        <option value="5">美洲</option>       
+    </select>  
+
+    <select name="selectAge" id="selectAge">   
+        <option value="1">按时间</option>   
+        <option value="2">国庆</option>   
+        <option value="3">春节</option>   
+        <option value="4">五一</option>   
+        <option value="5">中秋</option>       
+    </select>  
+	<div class="table-b"> 
+		<table border="0" cellpadding="1" bgcolor="#00CCCC" width="300">
+    <caption >以表格的背景作为边框线</caption>
+    <tr>
+	    <td bgcolor="#FFFFFF">
+		 名称
+		</td>
+		<td bgcolor="#FFFFFF">
+		 分类
+		</td>
+	  </tr>
+	  <tr>
+	     <td bgcolor="#FFFFFF">
+		  苹果
+		 </td>
+		 <td bgcolor="#FFFFFF">
+		  水果
+		 </td>
+	  </tr>
+   </table>
+
+
+	<form action="http://www.baidu.com/baidu" target="_blank">
+	<table bgcolor="#FFFFFF"><tr><td>
+	<input name=tn type=hidden value=baidu>
+	<a href="http://www.baidu.com/"target=_blank><img src="http://pic1.ooopic.com/uploadfilepic/ziku/2008-09-04/OOOPIC_vipvip_2008090401352266e4fd5e80e6251f31.jpg" alt="Baidu" align="bottom" border="0"></a>
+	<input type=text name=word size=30>
+	<input type="submit" value="百度搜索">
+	</td></tr></table>
+	</form>
+	<br/>
+	
+	<label>推荐线路</label>
+	<ol>
+    <li><img src="http://file104.mafengwo.net/s8/M00/BA/3A/wKgBpVXNWhCAZjkFAAfRuzlpSls98.jpeg?imageMogr2%2Finterlace%2F1" alt="Baidu" align="bottom" border="0"style="width:300px;height:100px">小明去西藏</li>
+    <li>小明去丽江</li>
+    <li>小明去印度</li>
+</ol>
+</form>
