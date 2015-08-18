@@ -1,0 +1,28 @@
+<html>
+  <head>
+  	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="signin.css" rel="stylesheet">
+ </head>
+{{usr}}
+<body>
+<form method='post' action='./signup'>
+  <button name='su'>sign up</button>
+	{% csrf_token %}
+</form>
+<div class='container'>
+ <form class='form-signin' action='./' method='post'>
+        <h1 class=form-signin-heading>Hello World</h1>
+	{% csrf_token %}
+	<label>User Name </label>
+	<input class='form-control' name='username' placeholder='Like Michael'/>
+	<br/>
+	<label>Password </label>
+	<input class='form-control' type='password' placeholder='********' name='password' />
+	<br/>
+	<button class='btn btn-primary'>Login</button>
+  </form>
+</div>
+<body/>
+</html>
+
+

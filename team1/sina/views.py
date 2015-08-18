@@ -1,0 +1,18 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+#http://127.0.0.1:8000/sina/
+def index(request):
+	usr = request.POST.get('username','noname')
+	pwd = request.POST.get('password','')
+	if(usr == 'noname'):
+		return render(request, 'sina/index.html')
+	elif(usr =='jason' and pwd == '123'):
+		return render(request, 'sina/ok.html',
+		{'usr':'Hello ' + usr, 'pwd':pwd})
+	else:
+		return render(request, 'sina/fail.html')
+
+def signup(request):
+	su = request.POST.get('su','')
+	return render(request, 'sina/signup.html')
