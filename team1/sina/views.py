@@ -17,10 +17,19 @@ def signup(request):
 	return render(request, 'sina/signup.html')
 
 
-def verify(request):	
+def verify(request):
+	from sina.models import User	
 	usr = request.POST.get('username','')
 	pwd = request.POST.get('password','')
 	mail = request.POST.get('email','')
-	if(1):
-		return render(request, 'sina/verified.html',
-		{'msg': 'Hello ' + usr +', we sent a verified email to ' + mail})
+	q = User.objects.filter(_usr=usr)
+	quan = q.count()
+		
+	if quan == 0:
+		User.objects.create(_usr = usr , _pwd = pwd , _mail = mail)
+		if(1):
+			return render(request, 'sina/verified.html',
+			{'msg': 'Hello ' + usr +', we sent a verified email to ' + mail})
+	else:
+		return render(request, 'sina/not_verified.html',
+		{'msg': 'Hello ' + usr +', your username has been used , please try another one.'})
