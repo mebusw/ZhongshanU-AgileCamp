@@ -22,7 +22,7 @@
                     var password = $("#loginPsw").val();
                     if(username==""){
                        if(username==""){
-                        alert("用户名不能为空")
+                        alert("手机或邮箱不能为空")
                         return;
                        }
                     }
@@ -36,8 +36,6 @@
                             "password": password
                         }
                         $.getJSON("/login", para, function(data){
-                            alert("in the get json")
-                            alert(data)
                             if(data=="00000"){
                                 alert("登录成功")
                                 window.location.href="/dashboard"
@@ -48,6 +46,52 @@
                     }
                 } else if(id == "logout"){
                     window.location.href = "/logout"
+                } else if(id == "dashboard"){
+                    window.location.href = "/dashboard"
+                } else if(id == "submitRegister"){
+                    var uname = $("#uname").val()
+                    var tel = $("#tel").val()
+                    var email = $("#email").val()
+                    var psw1 = $("#registerPsw").val()
+                    var psw2 = $("#registerPsw2").val()
+                    if(uname==""){
+                        alert("用户名不能为空")
+                        return;
+                    } else if(tel==""){
+                        alert("手机号不能为空")
+                        return;
+                    } else if(email==""){
+                        alert("邮箱不能为空")
+                        return;
+                    } else if(psw1==""){
+                        alert("请输入密码")
+                        return;
+                    } else if(psw2==""){
+                        alert("请重复输入密码")
+                        return;
+                    } else if(psw1 != psw2){
+                        alert("密码输入不一致")
+                        return;
+                    }
+                    var paraRegister = {
+                        "uname": uname,
+                        "tel": tel,
+                        "email": email,
+                        "password": psw1
+                    }
+                    $.getJSON("/register", paraRegister, function(data){
+                        if(data=="00000"){
+                            alert("注册成功")
+                            window.location.href = "/dashboard"
+                        }else if(data=="11111"){
+                            alert("遇到未知错误，请重新提交")
+                            return;
+                        }else if(data=="33344"){
+                            alert(email + " 已经被注册")
+                        }else if(data=="33333"){
+                            alert(tel + " 已经被注册")
+                        }
+                    });
                 }
             });
         });
@@ -64,7 +108,7 @@
                     {% if username %}
                     <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br>你好, {{ uname }}&nbsp;&nbsp;&nbsp;&nbsp;<a id="logout" style="color: #ff0000;text-decoration: NONE">退出登录</a></p>
                     {% else %}
-                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="register" data-toggle="modal" data-target="#registerModal">注册</a></p>
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-toggle="modal" data-target="#registerModal">注册</a></p>
                     {% endif %}
                 </div>
             </div>
@@ -121,5 +165,47 @@
               </div><!-- /.modal-content -->
            </div>
         </div>
+       </div>
+
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
+           aria-labelledby="registerLabel" aria-hidden="true">
+           <div class="modal-dialog">
+               <div style="height: 600px; width: 354px">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close"
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="registerLabel">
+                        <center>注册</center>
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><input type="text" placeholder="请输入用户名(6-30位字符组合)" id="uname"/></center>
+                    </div>
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><input type="text" placeholder="请输入手机号" id="tel"/></center>
+                    </div>
+                     <div class="row padded" style="margin-left: 3px">
+                        <center><input type="text" placeholder="请输入邮箱" id="email"/></center>
+                    </div>
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><input type="password" placeholder="请输入密码(6-20位数字,字母或符号的组合)" id="registerPsw"/></center>
+                    </div>
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><input type="password" placeholder="重复输入密码" id="registerPsw2"/></center>
+                    </div>
+                 </div>
+                 <div class="modal-footer">
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><a id="submitRegister" class="blue button" style="width: 200px" id="submitLogin">提交注册</a></center>
+                    </div>
+                 </div>
+              </div><!-- /.modal-content -->
+           </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -8,10 +8,10 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'OnlineExchange.views.begin', name='begin'),
-    url(r'^dashboard/', 'OnlineExchange.views.dash', name='dashboard'),
+    url(r'^dashboard', 'OnlineExchange.views.dash', name='dashboard'),
     url(r'^login', 'OnlineExchange.views.login', name='login'),
-    url(r'^category','OnlineExchange.views.getCategory', name='category'),
+    url(r'^category', 'OnlineExchange.views.getCategory', name='category'),
+    url(r'^register', 'OnlineExchange.views.register', name='register'),
+    url(r'^myproduct', 'OnlineExchange.views.getMyProduct', name='myproduct'),
     url(r'^logout', 'OnlineExchange.views.logout', name='logout'),
-    url(r'^register/', 'OnlineExchange.views.register', name='register'),
-    url(r'^myproduct','OnlineExchange.views.getMyProduct',name = 'myproduct')
 )

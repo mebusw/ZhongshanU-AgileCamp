@@ -4,14 +4,15 @@
     <list default="true" id="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" name="Default" comment="" />
     <ignored path="MyDjangoProject.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984439303" ignored="false" />
+    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439992135679" ignored="false" />
     <file path="/settings.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439904383816" ignored="false" />
     <file path="/models.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439951838405" ignored="false" />
-    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984395890" ignored="false" />
-    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984468595" ignored="false" />
+    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439991657557" ignored="false" />
+    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439988409892" ignored="false" />
     <file path="$USER_HOME$/unittest/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969508281" ignored="false" />
     <file path="/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969430475" ignored="false" />
-    <file path="/register.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984478725" ignored="false" />
+    <file path="/register.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439987148488" ignored="false" />
+    <file path="/constant.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439988302453" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +44,44 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="70" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-1.06">
+            <state line="40" column="64" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-12.0">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constant.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="24" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="76" selection-start="3981" selection-end="3981" vertical-scroll-proportion="-33.125">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,22 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="42" selection-start="1146" selection-end="1146" vertical-scroll-proportion="-13.0">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+            <state line="21" column="23" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="24" selection-start="2523" selection-end="2531" vertical-scroll-proportion="0.0">
+            <state line="63" column="19" selection-start="2093" selection-end="2093" vertical-scroll-proportion="-1.5347912">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -107,22 +131,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="66" selection-start="619" selection-end="619" vertical-scroll-proportion="0.36862004">
+            <state line="15" column="17" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constant.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,10 +158,11 @@
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/bootstrap-modal.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/jquery.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/models.py" />
-        <option value="$PROJECT_DIR$/OnlineExchange/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/OnlineExchange/Constant/constant.py" />
         <option value="$PROJECT_DIR$/OnlineExchange/templates/register.html" />
-        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
+        <option value="$PROJECT_DIR$/OnlineExchange/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/MyDjangoProject/urls.py" />
+        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
       </list>
     </option>
   </component>
@@ -593,20 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyDjangoProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="29" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.0">
@@ -628,11 +630,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="70" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-1.06">
+        <state line="40" column="64" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-12.0">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="76" selection-start="3981" selection-end="3981" vertical-scroll-proportion="-33.125">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -643,30 +692,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="1146" selection-end="1146" vertical-scroll-proportion="-13.0">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="24" selection-start="2523" selection-end="2531" vertical-scroll-proportion="0.0">
+        <state line="63" column="19" selection-start="2093" selection-end="2093" vertical-scroll-proportion="-1.5347912">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="619" selection-end="619" vertical-scroll-proportion="0.36862004">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
