@@ -4,13 +4,14 @@
     <list default="true" id="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" name="Default" comment="" />
     <ignored path="MyDjangoProject.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439982994658" ignored="false" />
+    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984439303" ignored="false" />
     <file path="/settings.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439904383816" ignored="false" />
     <file path="/models.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439951838405" ignored="false" />
-    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439983519715" ignored="false" />
-    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439983418847" ignored="false" />
+    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984395890" ignored="false" />
+    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984468595" ignored="false" />
     <file path="$USER_HOME$/unittest/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969508281" ignored="false" />
     <file path="/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969430475" ignored="false" />
+    <file path="/register.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439984478725" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="1560" selection-end="1568" vertical-scroll-proportion="-0.9819413">
+            <state line="60" column="70" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-1.06">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,6 +52,18 @@
                 <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="70" selection-start="989" selection-end="989" vertical-scroll-proportion="0.54268295">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,30 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-modal.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineExchange/static/js/bootstrap-modal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="19" selection-start="5539" selection-end="5539" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="81" selection-end="81" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="30" selection-start="2223" selection-end="2236" vertical-scroll-proportion="0.0">
+            <state line="75" column="10" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -117,7 +110,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="74" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+            <state line="14" column="20" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -150,9 +143,10 @@
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/bootstrap-modal.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/jquery.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/models.py" />
-        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
         <option value="$PROJECT_DIR$/MyDjangoProject/urls.py" />
+        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
         <option value="$PROJECT_DIR$/OnlineExchange/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/OnlineExchange/templates/register.html" />
       </list>
     </option>
   </component>
@@ -216,6 +210,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -493,13 +545,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -525,11 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/static/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/static/css/demo/jquery.snippet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -546,23 +586,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/static/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9258" column="13" selection-start="247970" selection-end="247970" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="81" selection-end="81" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
@@ -588,27 +614,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="74" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state line="8" column="21" selection-start="81" selection-end="81" vertical-scroll-proportion="0.24896266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/static/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9258" column="13" selection-start="247970" selection-end="247970" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="30" selection-start="2223" selection-end="2236" vertical-scroll-proportion="0.0">
+        <state line="75" column="10" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="48" selection-start="1560" selection-end="1568" vertical-scroll-proportion="-0.9819413">
+        <state line="60" column="70" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-1.06">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -617,6 +657,16 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="70" selection-start="989" selection-end="989" vertical-scroll-proportion="0.54268295">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

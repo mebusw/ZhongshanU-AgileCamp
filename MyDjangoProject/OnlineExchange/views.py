@@ -72,6 +72,13 @@ def logout(request):
         response.delete_cookie('username')
     return response
 
+
+def register(request):
+    """
+    user register interface
+    """
+    pass
+
 def getCategory(request):
     '''
 
