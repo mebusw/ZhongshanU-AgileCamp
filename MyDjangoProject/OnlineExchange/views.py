@@ -90,3 +90,21 @@ def getCategory(request):
     productDir['products'] = products
 
     response = HttpResponse(json.dumps(productDir),content_type="application/json")
+    return response
+
+def getMyProduct(request):
+    '''
+    '''
+    uid = request.GET.get('uid',None)
+
+    if uid
+        products = Product.objects.GET.get('uid' == uid)
+
+        productDir = {}
+        productDir['products'] = products
+
+        response = HttpResponse(json.dumps(productDir),content_type="application/json")
+        return response
+
+    else
+        return response = HttpResponse(status=403)

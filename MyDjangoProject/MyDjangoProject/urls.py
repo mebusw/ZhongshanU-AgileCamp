@@ -12,5 +12,9 @@ urlpatterns = patterns('',
     url(r'^login', 'OnlineExchange.views.login', name='login'),
     url(r'^category','OnlineExchange.views.getCategory', name='category'),
     url(r'^logout', 'OnlineExchange.views.logout', name='logout'),
+<<<<<<< HEAD
     url(r'^register/', 'OnlineExchange.views.register', name='register'),
+=======
+    url(r'^myproduct','OnlineExchange.views.getMyProduct',name = 'myproduct')
+>>>>>>> e3b28b0f4972ce0acee9382322bbf075abcc8888
 )
