@@ -4,7 +4,7 @@
     <list default="true" id="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" name="Default" comment="" />
     <ignored path="MyDjangoProject.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439975642006" ignored="false" />
+    <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439982994658" ignored="false" />
     <file path="/settings.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439904383816" ignored="false" />
     <file path="/models.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439951838405" ignored="false" />
     <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439955130135" ignored="false" />
@@ -96,7 +96,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="22" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.64426875">
+            <state line="72" column="19" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.64426875">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -580,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="22" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.64426875">
+        <state line="72" column="19" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.64426875">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

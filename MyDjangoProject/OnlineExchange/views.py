@@ -62,6 +62,16 @@ def login(request):
 
    # return HttpResponse(json.dumps(response_data),content_type = "application/json")
 
+
+def logout(request):
+    """
+    user logout interface
+    """
+    response = HttpResponseRedirect('/dashboard')
+    if 'username' in request.COOKIES:
+        response.delete_cookie('username')
+    return response
+
 def getCategory(request):
     '''
 
