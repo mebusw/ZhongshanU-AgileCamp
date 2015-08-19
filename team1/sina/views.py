@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 #http://127.0.0.1:8000/sina/
-from sina.models import User	
+from sina.models import User
+from django.core.exceptions import ObjectDoesNotExist
 def index(request):
 	from sina.models import User	
 	usr = request.POST.get('username','noname')
@@ -10,7 +11,7 @@ def index(request):
 	p = User.objects.filter(_usr=usr)
 	p_quan = p.count()
 	if(usr == 'noname'):
-		return render(request, 'sina/signin.html')
+		return render(request, 'sina/index_main.html')
 	elif(usr =='jason' and pwd == '123'):
 		return render(request, 'sina/ok.html',
 		{'usr':'Hello ' + usr, 'pwd':pwd})
@@ -41,8 +42,20 @@ def verify(request):
 def signin(request):
 	usr = request.POST.get('user','')
 	pwd = request.POST.get('password','')
-	u = User.objects.get(_usr=usr)
-	if(u._usr==usr and u._pwd == pwd):
-		return render(request, 'sina/index_good.html',{'msg':'Hello '+ u._usr})
-	else:
-		return render(request, 'sina/fail.html')
+	try:
+		u = User.objects.get(_usr=usr)	
+		if(u._usr==''):
+			return render(request, 'sina/index_good.html',{'msg':'Hello, Guest!'})
+		elif(u._usr==usr and u._pwd == pwd):
+			return render(request, 'sina/index_good.html',{'msg':'Hello,'+ u._usr +'!'})
+		else:
+			return render(request, 'sina/fail.html')
+	except  ObjectDoesNotExist as e:
+		return render(request, 'sina/signin.html')
+
+def more(request):
+	return render(request, 'sina/more.html')
+	
+def ask(request):
+	return render(request, 'sina/ask.html')
+	
