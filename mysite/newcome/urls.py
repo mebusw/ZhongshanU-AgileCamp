@@ -1,4 +1,3 @@
-
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -14,12 +13,11 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import include, url
-from django.contrib import admin
+from django.conf.urls import include, url, patterns
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^sina/', include('sina.urls')),
-    url(r'^hoop/', include('hoop.urls')),
-    url(r'^newcome/', include('newcome.urls')),
-]
+
+urlpatterns = patterns('newcome.views',
+    url(r'^$','index'),
+	url(r'zzmap','zzmap')
+)
+

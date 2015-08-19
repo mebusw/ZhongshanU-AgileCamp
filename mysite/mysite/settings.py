@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'sina',
     'hoop',
+    'newcome',
 )
 
 MIDDLEWARE_CLASSES = (

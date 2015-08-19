@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>中珠地图</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<canvas id="myCanvas" width="1500" height="900">
+    你的浏览器不支持canvas画布元素，请更新浏览器获得演示效果。
+</canvas>
+<script type="text/javascript">
+	alert('使用指南：请在地图中您当前所在位置单击标记，以便您稍后找到该地。');
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    canvas.addEventListener("mousedown", onMouseDown, false);
+	
+    var image = new Image();
+    image.src = "http://map.tqybw.net/ditu/guangdong/picture/2013048981.jpg";
+    var x = 0, y = 0;
+    var width, height;
+    image.onload = function () {
+        width = image.width;
+        height = image.height;
+        context.drawImage(image, x, y);
+    };
+
+    function onMouseDown(e) {
+        var mouseX = e.pageX - canvas.clientLeft;
+        var mouseY = e.pageY - canvas.clientTop;
+
+		context.lineWidth = 3;
+		context.strokeStyle="#FF0000"; 
+		context.beginPath();
+		var degToRad = Math.PI / 180;
+		context.arc(mouseX-5, mouseY-5, 5, 0, 360 * degToRad, true);
+		context.stroke();
+    }
+</script>
+</body>
+</html>
