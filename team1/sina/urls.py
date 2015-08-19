@@ -1,6 +1,6 @@
 from django.conf.urls import include, url, patterns
 from django.contrib import admin
-from .views import index,verify, signup, signin
+from .views import index,verify, signup, signin, more, ask
 urlpatterns = patterns('sina.views',
 #    url(r'^sina/', include('sina.urls')),		
 #    url(r'^admin/', include(admin.site.urls)),
@@ -8,4 +8,7 @@ urlpatterns = patterns('sina.views',
      url(r'^signup$','signup'),
      url(r'^verify$','verify'),
      url(r'^signin$','signin'),
+     url(r'^more$','more'),
+     url(r'^ask$','ask'),
+
 )
