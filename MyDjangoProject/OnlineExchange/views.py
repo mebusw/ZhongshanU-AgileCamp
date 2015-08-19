@@ -83,7 +83,7 @@ def getCategory(request):
     '''
 
     '''
-    category = request.GET.get('type',0)
+    category = request.GET.get('type', 0)
     products = Product.objects.get(type == category)
 
     productDir = {}
