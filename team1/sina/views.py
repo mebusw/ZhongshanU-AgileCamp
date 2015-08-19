@@ -43,6 +43,6 @@ def signin(request):
 	pwd = request.POST.get('password','')
 	u = User.objects.get(_usr=usr)
 	if(u._usr==usr and u._pwd == pwd):
-		return render(request, 'sina/ok.html')
+		return render(request, 'sina/index_good.html',{'msg':'Hello '+ u._usr})
 	else:
 		return render(request, 'sina/fail.html')
