@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 # Create your views here.
-#http://127.0.0.1:8000/sina/
+# http://127.0.0.1:8000/sina/
 def index(request):
 	usr = request.POST.get('username','noname')
 	pwd = request.POST.get('password','')

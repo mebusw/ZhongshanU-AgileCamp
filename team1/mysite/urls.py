@@ -1,4 +1,3 @@
-
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^sina/', include('sina.urls')),		
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^sina/', include('sina.urls')),
+	
 ]
