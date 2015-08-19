@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>晓 - agile team</title>
+    <style>
+        a:link {text-decoration: none;color:red;}
+        a:visited {color:green；text-decoration:none;}
+        a:hover  {color:blue;text-decoration:underline;}
+        a:active {color:orange;text-decoration:blink;}
+
+        BODY {
+            FONT-SIZE: 12px;FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+            WIDTH: 60%; PADDING-LEFT: 25px;
+        }
+        DIV.jogger {
+            PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 7px;
+             PADDING-TOP: 2px; FONT-FAMILY: "Lucida Sans Unicode",
+             "Lucida Grande", LucidaGrande, "Lucida Sans", Geneva, Verdana, sans-serif
+        }
+        DIV.jogger A {
+            PADDING-RIGHT: 0.64em; PADDING-LEFT: 0.64em; PADDING-BOTTOM: 0.43em;
+             MARGIN: 2px; COLOR: white; PADDING-TOP: 0.5em;
+            BACKGROUND-COLOR: LightSkyBlue; TEXT-DECORATION: none
+        }
+        DIV.jogger A:hover {
+            PADDING-RIGHT: 0.64em; PADDING-LEFT: 0.64em; PADDING-BOTTOM: 0.43em;
+             MARGIN: 2px; COLOR: black; PADDING-TOP: 0.5em; BACKGROUND-COLOR: OrangeRed
+        }
+        DIV.jogger A:active {
+            PADDING-RIGHT: 0.64em; PADDING-LEFT: 0.64em; PADDING-BOTTOM: 0.43em;
+             MARGIN: 2px; COLOR: #fff; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #de1818
+        }
+        DIV.jogger SPAN.current {
+            PADDING-RIGHT: 0.64em; PADDING-LEFT: 0.64em; PADDING-BOTTOM: 0.43em;
+             MARGIN: 2px; COLOR: black; PADDING-TOP: 0.5em; BACKGROUND-COLOR: AliceBlue
+        }
+        DIV.jogger SPAN.disabled {
+            DISPLAY: none
+        }
+    </style>
+</head>
+
+
+<body>
+<!--问答模块begin-->
+<div style="border:18px solid AliceBlue;padding:3px;width:500px;height:800px;background:AliceBlue">
+    <font style="line-height:100%;" size="5" face="Microsoft YaHei" color="DeepSkyBlue">
+    <h3>一问就晓</h3>
+    </font>
+
+    <font style="line-height:250%;" size="3" face="Microsoft YaHei" color="blue">
+    <form action="./submitPage/" method="post">{% csrf_token %}
+      <p>
+          <input class='form-control' name='question' placeholder='如何穷游西藏？' style="width:345px;height:30px"/>
+          <button class='btn btn-primary' style="background:LightSkyBlue;color:white;height:37px">找找问题</button>
+          <button class='btn btn-primary' style="background:LightSkyBlue;color:white;height:37px">我想问问</button>
+      </p>
+    </form></font>
+
+    <font style="line-height:100%;" size="3" face="Microsoft YaHei" color="#00BFFF">
+    <hr />
+    <p color="DarkSkyBlue">排序方式
+        <select>
+          <option value="volvo" color="#00BFFF">默认</option>
+          <option value="saab">最新</option>
+          <option value="opel">最热门</option>
+          <option value="audi">最有用</option>
+        </select>
+    </p>
+    <hr /></font>
+
+    <font style="line-height:200%;" size="3" face="Microsoft YaHei" color="black">
+    <p>
+        <a href="http://www.baidu.com" style="color:black">珠海有什么景点好玩的？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">广州一日游如何安排</a> <br>
+        <a href="http://www.baidu.com" style="color:black">如何穷游西藏？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">北京的景点</a> <br>
+        <a href="http://www.baidu.com" style="color:black">珠海有什么景点好玩的？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">广州一日游如何安排</a> <br>
+        <a href="http://www.baidu.com" style="color:black">如何穷游西藏？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">北京的景点</a> <br>
+        <a href="http://www.baidu.com" style="color:black">珠海有什么景点好玩的？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">广州一日游如何安排</a> <br>
+        <a href="http://www.baidu.com" style="color:black">如何穷游西藏？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">北京的景点</a> <br>
+        <a href="http://www.baidu.com" style="color:black">珠海有什么景点好玩的？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">广州一日游如何安排</a> <br>
+        <a href="http://www.baidu.com" style="color:black">如何穷游西藏？</a> <br>
+        <a href="http://www.baidu.com" style="color:black">北京的景点</a> <br>
+
+    </p></font>
+
+    <font style="line-height:200%;" size="3" face="Microsoft YaHei" color="black">
+    <div class="jogger">
+        <span class="disabled">&lt;上一页 </span>
+            <span class="current">1</span>
+                <a href="http://www.baidu.com" >2</a>
+                <a href="http://www.baidu.com">3</a>
+                <a href="#?page=4">4</a>
+                <a href="#?page=5">5</a>...
+                <a href="#?page=199">199</a>
+                <a href="#?page=200">200</a>
+                <a href="#?page=2">下一页&gt; </a>
+    </div></font>
+
+</div>
+<!--问答模块end-->
+</body>
+</html>
+
