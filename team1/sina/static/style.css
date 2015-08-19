@@ -1,0 +1,64 @@
+
+			body{
+				
+			}
+			
+			#Title{
+				
+				background: url(title.jpg) no-repeat center center;
+				background-size:cover;
+				z-index:100;
+			}
+		
+		
+			@-webkit-keyframes greenPulse {
+				from { background-color: #98f5ff; -webkit-box-shadow: 0 0 9px #333; }
+				50% { background-color: #aeeeee; -webkit-box-shadow: 0 0 18px #91bd09; }
+				to { background-color: #98f5ff; -webkit-box-shadow: 0 0 9px #333; }
+			}
+			
+			
+			#hw{				
+				width:150px;
+				height:150px;
+				font-size: 60px;
+				float: left;
+				margin-top:5%;
+				margin-left:10%;
+				background: url(xiao.png) no-repeat center center;
+				background-size:cover;
+				z-index:200;
+				
+			}
+			
+			#hw2{
+				
+				padding: 50px 20px 20px 20px;
+				padding-top: 10%;
+				background: url(richu.png) no-repeat center center;
+			}
+			
+			#hw3{
+				
+				padding: 20px 20px 20px 20px;
+				margin-left:40%;
+				padding-bottom:10%;
+				background: url(yige.png) no-repeat center center;
+			}
+			#hw4{
+				
+				
+				float:none;
+			}
+			.form-control{
+				width: 200px;
+			}
+			#sut{
+				margin-left:2%;
+			}
+			.container{
+				margin-left:1%;
+				float: left;
+			}
+			
+			
