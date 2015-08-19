@@ -17,7 +17,6 @@
             $("a").click(function(){
                 var id = $(this).attr("id")
                 var check = true
-                alert("click " + id)
                 if(id == "submitLogin"){
                     var username = $("#loginUsername").val();
                     var password = $("#loginPsw").val();
@@ -47,6 +46,8 @@
                             }
                         });
                     }
+                } else if(id == "logout"){
+                    window.location.href = "/logout"
                 }
             });
         });
@@ -61,7 +62,7 @@
 			    </div>
                 <div class="one half">
                     {% if username %}
-                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br>你好, {{ uname }}</p>
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br>你好, {{ uname }}&nbsp;&nbsp;&nbsp;&nbsp;<a id="logout" style="color: #ff0000;text-decoration: NONE">退出登录</a></p>
                     {% else %}
                     <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="register" data-toggle="modal" data-target="#registerModal">注册</a></p>
                     {% endif %}

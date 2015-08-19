@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^$', 'OnlineExchange.views.begin', name='begin'),
     url(r'^dashboard/', 'OnlineExchange.views.dash', name='dashboard'),
     url(r'^login', 'OnlineExchange.views.login', name='login'),
-    url(r'^category','OnlineExchange.views.getCategory',name = 'category')
+    url(r'^category','OnlineExchange.views.getCategory', name='category'),
+    url(r'^logout', 'OnlineExchange.views.logout', name='logout'),
 )

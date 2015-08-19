@@ -7,8 +7,8 @@
     <file path="/views.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439982994658" ignored="false" />
     <file path="/settings.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439904383816" ignored="false" />
     <file path="/models.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439951838405" ignored="false" />
-    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439955130135" ignored="false" />
-    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439973351857" ignored="false" />
+    <file path="/urls.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439983519715" ignored="false" />
+    <file path="/dashboard.html" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439983418847" ignored="false" />
     <file path="$USER_HOME$/unittest/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969508281" ignored="false" />
     <file path="/main.py" changelist="f3a76ad7-6cd7-409a-af6e-c06813c1a52d" time="1439969430475" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,12 +39,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="24" selection-start="3112" selection-end="3112" vertical-scroll-proportion="-12.9">
+            <state line="34" column="48" selection-start="1560" selection-end="1568" vertical-scroll-proportion="-0.9819413">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -93,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="19" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.64426875">
+            <state line="71" column="30" selection-start="2223" selection-end="2236" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -116,7 +117,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+            <state line="12" column="74" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -149,9 +150,9 @@
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/bootstrap-modal.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/static/js/jquery.js" />
         <option value="$PROJECT_DIR$/OnlineExchange/models.py" />
+        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
         <option value="$PROJECT_DIR$/MyDjangoProject/urls.py" />
         <option value="$PROJECT_DIR$/OnlineExchange/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/OnlineExchange/views.py" />
       </list>
     </option>
   </component>
@@ -215,6 +216,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineExchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Constant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyDjangoProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,12 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state line="10" column="24" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -557,32 +588,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/Constant/constant.py">
+    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="3112" selection-end="3112" vertical-scroll-proportion="-12.9">
+        <state line="12" column="74" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineExchange/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="19" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.64426875">
+        <state line="71" column="30" selection-start="2223" selection-end="2236" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineExchange/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="48" selection-start="1560" selection-end="1568" vertical-scroll-proportion="-0.9819413">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#center#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
