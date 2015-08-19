@@ -41,7 +41,8 @@ def verify(request):
 def signin(request):
 	usr = request.POST.get('user','')
 	pwd = request.POST.get('password','')
-#	if(usr=='E-mail+address/Username' and pwd =='Password'):
-	return render(request, 'sina/ok.html')
-#	else:
-#		return render(request, 'sina/fail.html')
+	u = User.objects.get(_usr=usr)
+	if(u._usr==usr and u._pwd == pwd):
+		return render(request, 'sina/ok.html')
+	else:
+		return render(request, 'sina/fail.html')
