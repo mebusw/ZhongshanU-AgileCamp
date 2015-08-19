@@ -1,0 +1,111 @@
+{% load staticfiles %}
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="gb2321">
+  	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="signin.css" rel="stylesheet">
+	<title>晓-日出就出发</title>
+	<style type="text/css">
+			body{
+				
+			}
+			
+			#Title{
+				
+				background: url({% static "title.jpg"%}) no-repeat center center;
+				background-size:cover;
+				z-index:100;
+			}
+		
+		
+			@-webkit-keyframes greenPulse {
+				from { background-color: #98f5ff; -webkit-box-shadow: 0 0 9px #333; }
+				50% { background-color: #aeeeee; -webkit-box-shadow: 0 0 18px #91bd09; }
+				to { background-color: #98f5ff; -webkit-box-shadow: 0 0 9px #333; }
+			}
+			
+			
+			#hw{				
+				width:150px;
+				height:150px;
+				font-size: 60px;
+				float: left;
+				margin-top:5%;
+				margin-left:10%;
+				background: url({% static "xiao.png"%}) no-repeat center center;
+				background-size:cover;
+				z-index:200;
+				
+			}
+			
+			#hw2{
+				
+				padding: 50px 20px 20px 20px;
+				padding-top: 10%;
+				background: url({% static "richu.png"%}) no-repeat center center;
+			}
+			
+			#hw3{
+				
+				padding: 20px 20px 20px 20px;
+				margin-left:40%;
+				padding-bottom:10%;
+				background: url({% static "yige.png"%}) no-repeat center center;
+			}
+			#hw4{
+				
+				
+				float:none;
+			}
+			.form-control{
+				width: 200px;
+			}
+			#sut{
+				margin-left:2%;
+			}
+			.container{
+				margin-left:1%;
+				float: left;
+			}
+			
+			
+		</style>
+ </head>
+
+
+<body>
+
+		<div id="Title">
+			
+			<div id="hw"></div>
+			<h2 id="hw2"></h2>
+			<h3 id="hw3"></h3>
+			<div id="hw4"></div>
+			
+		</div>
+		
+		{{usr}}
+		<form method='post' action='./signup'>
+			<button id="sut" class='button button-primary button-circle button-small'name='su'>sign up</button>
+			{% csrf_token %}
+		</form>
+		
+		<div class='container'>
+			<form class='form-signin' action='./' method='post'>
+				<h1 class=form-signin-heading>Hello World</h1>
+				{% csrf_token %}
+			
+				<label>User Name </label>
+				<input class='form-control' name='username' placeholder='Like Michael'/>
+				<br/>
+				<label>Password </label>
+				<input class='form-control' type='password' placeholder='********' name='password' />
+				<br/>
+				<button class='btn btn-primary'>Login</button>
+			</form>
+		</div>
+	</body>
+</html>
+
+
