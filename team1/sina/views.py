@@ -17,7 +17,7 @@ def index(request):
 def signup(request):
 	return render(request, 'sina/signup.html')
 
-
+fdfadfasdf
 def verify(request):	
 	usr = request.POST.get('username','')
 	pwd = request.POST.get('password','')
