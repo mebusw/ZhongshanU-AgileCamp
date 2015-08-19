@@ -4,10 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-	usr = request.POST.get('username', 'noname')
-	pwd = request.POST.get('password', '')
-	return render(request, 'hoop/index.html',
-		{'usr': usr, 'pwd': pwd})
+	return render(request, 'hoop/index.html')
 
 def xunwuqishi(request):
 	return render(request, 'hoop/xunwulianjie.html')
