@@ -19,3 +19,4 @@ class Product(models.Model):
     status = models.IntegerField()
     description = models.CharField(max_length=1000)
     url = models.CharField(max_length=200)
+    type = models.CharField(max_length=20)

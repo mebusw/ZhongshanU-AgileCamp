@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <script type="text/javascript" src="/static/js/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/js/modernizer.js"></script>
-    <script style="text/javascript" src="/static/js/bootstrap-modal.js"></script>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" media="screen">
     <link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
@@ -15,10 +15,38 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("a").click(function(){
-                alert("haha")
                 var id = $(this).attr("id")
-                if(id == "login"){
-                    document.getElementById("example").style.display=""
+                var check = true
+                alert("click " + id)
+                if(id == "submitLogin"){
+                    var username = $("#loginUsername").val();
+                    var password = $("#loginPsw").val();
+                    if(username==""){
+                       if(username==""){
+                        alert("用户名不能为空")
+                        return;
+                       }
+                    }
+                    if(password==""){
+                        alert("密码不能为空")
+                        return;
+                    }
+                    if(check){
+                        var para = {
+                            "username": username,
+                            "password": password
+                        }
+                        $.getJSON("/login", para, function(data){
+                            alert("in the get json")
+                            alert(data)
+                            if(data=="00000"){
+                                alert("登录成功")
+                                window.location.href="/dashboard"
+                            }else if(data=="44444"){
+                                alert("用户名或密码错误")
+                            }
+                        });
+                    }
                 }
             });
         });
@@ -32,32 +60,61 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/img/first.png" style="height: 50px; width: 120px; border: NONE"/>
 			    </div>
                 <div class="one half">
-                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="register">注册</a></p>
+                    {% if username %}
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br>你好, {{ uname }}</p>
+                    {% else %}
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="register" data-toggle="modal" data-target="#registerModal">注册</a></p>
+                    {% endif %}
                 </div>
             </div>
             <nav role="navigation" class="nav gap-top">
                 <ul role="menubar">
                     <li><a id="dashboard"><i class="icon-home"></i> 首页</a></li>
-                    <li><a id="homepage"><i class="icon-male"></i> 个人主页</a></li>
-                    <li><a id="necessity"><i class="icon-upload-alt"></i> 发布需求</a></li>
-                    <li><a id="add"><i class="icon-plus"></i> 闲置物品</a></li>
+                    {% if username %}
+                        <li><a id="homepage"><i class="icon-male"></i> 个人主页</a></li>
+                        <li><a id="necessity"><i class="icon-upload-alt"></i> 发布需求</a></li>
+                        <li><a id="add"><i class="icon-plus"></i> 闲置物品</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>
      </header>
-        <div id="example" class="modal hide fade in" style="display: none; ">
-			<div class="modal-header">
-				<a class="close" data-dismiss="modal">×</a>
-					<h3>This is a Modal Heading</h3>
-			</div>
-			<div class="modal-body">
-				<h4>Text in a modal</h4>
-				<p>You can add some text here.</p>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-success">Call to action</a>
-				<a href="#" class="btn" data-dismiss="modal">Close</a>
-			</div>
-		</div>
+<!-- 模态框（Modal） -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+           aria-labelledby="loginLabel" aria-hidden="true">
+           <div class="modal-dialog">
+               <div style="height: 350px; width: 354px">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close"
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="loginLabel">
+                        <center>登录</center>
+                    </h4>
+                 </div>
+                  <form onsubmit="return false;">
+                 <div class="modal-body">
+
+                        <div class="row padded" style="margin-left: 3px">
+                            <center><input type="text" placeholder="手机号/邮箱" id="loginUsername"/></center>
+                        </div>
+                        <div class="row padded" style="margin-left: 3px">
+                            <center><input type="password" placeholder="密码" id="loginPsw"/></center>
+                        </div>
+                        <div class="row">
+                            <span class="help-block"></span>
+                        </div>
+                 </div>
+                 <div class="modal-footer">
+                    <div class="row padded" style="margin-left: 3px">
+                        <center><a class="blue button" style="width: 200px" id="submitLogin">登录</a></center>
+                    </div>
+                 </div>
+                 </form>
+              </div><!-- /.modal-content -->
+           </div>
+        </div>
 </body>
 </html>
