@@ -1,4 +1,15 @@
 #Data Base
-/team1/db.sqlite3
-#python cache
-*.pyc
+db.sqlite3
+
+#Python cache
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
