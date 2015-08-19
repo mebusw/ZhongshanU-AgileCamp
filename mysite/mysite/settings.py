@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'sina',
     'hoop',
     'newcome',
+    'index',
 )
 
 MIDDLEWARE_CLASSES = (
