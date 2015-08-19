@@ -1,0 +1,4 @@
+#Data Base
+/team1/db.sqlite3
+#python cache
+*.pyc
