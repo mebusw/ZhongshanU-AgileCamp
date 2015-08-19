@@ -1,32 +1,14 @@
-<head>
-	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-</head>
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<body>
 
-<center>
-<h1>Hello World</h1>
-{{ usr }}
-{{ pwd }}
+<h1>欢迎使用XXX停车软件</h1>
+<h1>你的自行车上次停在：{{ pla }}</h1>
 
-<form action='./' method='post'>
+<form action='./' method = 'post'>
 	{% csrf_token %}
-	<!--
-	<label>Username</label>
-	<input name='username' />
-	<br/>
-	<label>Password</label>
-	<input name='password' type='password' />
-	<button class="btn btn-lg btn-outline">Login</button>
-	<br/>
-	-->
-	<a href="xunwuqishi"><b>寻物链接</b></a>
-	<br />
-	
-	<a href="http://www.chinabike.net/html/show-42-2525-1.html"><img src="http://www.chinabike.net/uploadfile/2015/0814/20150814040910733.jpg" width = 150 title="隔壁买车行"></a>
+	<label>停车在</label>
+	<input name = 'place' >
+	<button>停车</button>
+</form>
 
-	<a href="wuwujiaohuan" title="物物交换车"><img src="http://www.openbeta.cn/uploads/allimg/130125/10235TV0-0.jpg" width="150"></a>
-
-</form></center>
-
-</body>
+{{list}}

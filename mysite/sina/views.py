@@ -1,16 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from sina.models import Placename
 
 # Create your views here.
 
-def index(request):
-	usr = request.POST.get('username', 'noname')
-	pwd = request.POST.get('password', '')
-	return render(request, 'sina/index.html',
-		{'usr': usr, 'pwd': pwd})
+# http://120.0.0.1/sina
+def index ( request ):
+	pla = request.POST.get('place' , '')
 
-def xunwuqishi(request):
-	return render(request, 'sina/xunwulianjie.html')
+	# add to placename
+	Placename.objects.create(name = pla)
+	place_list = Placename.objects.all()
 
-def wuwujiaohuan(request):
-	return render(request, 'sina/wuwujiaohuan.html')
+	name_list = []
+	for i in place_list:
+		name_list.append(i.name)
+	
+	return render(request, 'sina/index.html' ,
+		{ 'pla':pla	, 'list':name_list[1:] } ) 
+
