@@ -23,7 +23,7 @@ def index(request):
 def signup(request):
 	return render(request, 'sina/signup.html')
 
-
+def dfsasf:
 def verify(request):
 	from sina.models import User	
 	usr = request.POST.get('username','')
