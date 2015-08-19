@@ -19,7 +19,7 @@ def index(request):
 		{'usr':'Hello ' + usr, 'pwd':pwd})
 	else:
 		return render(request, 'sina/fail.html')
-
+def faefsdf:
 def signup(request):
 	return render(request, 'sina/signup.html')
 
