@@ -1,14 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
 # Create your views here.
-# http://127.0.0.1:8000/sina/
+#http://127.0.0.1:8000/sina/
+
 def index(request):
+	from sina.models import User	
 	usr = request.POST.get('username','noname')
 	pwd = request.POST.get('password','')
+	p = User.objects.filter(_usr=usr)
+	p_quan = p.count()
 	if(usr == 'noname'):
 		return render(request, 'sina/index.html')
 	elif(usr =='jason' and pwd == '123'):
+		return render(request, 'sina/ok.html',
+		{'usr':'Hello ' + usr, 'pwd':pwd})
+	elif(p_quan == 1):
 		return render(request, 'sina/ok.html',
 		{'usr':'Hello ' + usr, 'pwd':pwd})
 	else:
