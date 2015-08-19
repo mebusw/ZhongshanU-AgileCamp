@@ -100,4 +100,4 @@ def getMyProduct(request):
         return response
 
     else
-        response = HttpResponse(status=403)
+        return response = HttpResponse(status=403)
