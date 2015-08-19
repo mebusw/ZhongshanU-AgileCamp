@@ -10,7 +10,7 @@ def index(request):
 	p = User.objects.filter(_usr=usr)
 	p_quan = p.count()
 	if(usr == 'noname'):
-		return render(request, 'sina/index.html')
+		return render(request, 'sina/signin.html')
 	elif(usr =='jason' and pwd == '123'):
 		return render(request, 'sina/ok.html',
 		{'usr':'Hello ' + usr, 'pwd':pwd})
@@ -33,7 +33,15 @@ def verify(request):
 		User.objects.create(_usr = usr , _pwd = pwd , _mail = mail)
 		if(1):
 			return render(request, 'sina/verified.html',
-			{'msg': 'Hello ' + usr +', we sent a verified email to ' + mail})
+			{'msg': 'Hello ' + usr +', we xsent a verified email to ' + mail})
 	else:
 		return render(request, 'sina/not_verified.html',
 		{'msg': 'Hello ' + usr +', your username has been used , please try another one.'})
+
+def signin(request):
+	usr = request.POST.get('user','')
+	pwd = request.POST.get('password','')
+#	if(usr=='E-mail+address/Username' and pwd =='Password'):
+	return render(request, 'sina/ok.html')
+#	else:
+#		return render(request, 'sina/fail.html')
