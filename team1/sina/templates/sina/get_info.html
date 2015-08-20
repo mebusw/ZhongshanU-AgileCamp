@@ -12,13 +12,19 @@
 
 <!--必要样式-->
 <link rel="stylesheet" type="text/css" href="{%static 'css_info/component.css'%}" />
+<style type="text/css">
+		#subbut{
+			margin-left:40%;
+
+		}
+</style>
 
 <script src="{%static 'js_info/modernizr.custom.js'%}"></script>
 
 </head>
 <body>
 <section>
-	<form id="theForm" class="simform" autocomplete="off">
+	<form id="theForm" class="simform" autocomplete="off" action='./info' method='post'>
 		<div class="simform-inner">
 		<div style="text-align:center; font: 'MicroSoft YaHei';">
 			<ol class="questions">
@@ -46,9 +52,8 @@
 					<span><label for="q6">你的备注和要求?</label></span>
 					<input id="q6" name="q6" type="text"/>
 				</li>
+					<div id="insert"></div>
 			</ol><!-- /questions -->
-
-			<button class="submit" type="submit">提交信息</button>
 			</div>
 			<div class="controls">
 				<button class="next"></button>
@@ -61,6 +66,7 @@
 			</div><!-- / controls -->
 		</div><!-- /simform-inner -->
 		<span class="final-message"></span>
+		<input id="subbut" type='submit' value='submit'/>
 	</form><!-- /simform -->			
 </section>
 
@@ -68,7 +74,7 @@
 <script type="text/javascript" src="{%static 'js_info/stepsForm.js'%}"></script>
 <script type="text/javascript">
 var theForm = document.getElementById( 'theForm' );
-
+var counter=0;
 new stepsForm( theForm, {
 	onSubmit : function( form ) {
 		// hide form
@@ -82,12 +88,21 @@ new stepsForm( theForm, {
 
 		// let's just simulate something...
 		var messageEl = theForm.querySelector( '.final-message' );
-		messageEl.innerHTML = '谢谢你！请等待导游的联系';
+		messageEl.innerHTML = '请点击下面submit button即可';
 		classie.addClass( messageEl, 'show' );
+		counter++;		
+		if(counter == 5)
+			insert();
 	}
 } );
 </script>
-
+<script type="text/javascript">
+	function insert(){
+   var insertText = "<input type='submit'/ value='Submit'>";
+   document.getElementById("insert").innerHTML(insertText);
+}
+<body>
+</script>>
 
 
 </body>
