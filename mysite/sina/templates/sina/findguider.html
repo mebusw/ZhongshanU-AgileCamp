@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>我要找导游</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Paix Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/static/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/static/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--start-header-->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="head">
+			<div class="logo">
+				<a href="index.html"><img src="/static/images/logo3.png" style="height:80px"alt="" /></a>
+			</div>
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="http://127.0.0.1:8000/sina/index"  class="hvr-bounce-to-bottom">首页</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/gonglv" class="hvr-bounce-to-bottom">热门攻略</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/findguider" class="active hvr-bounce-to-bottom">我要找导游</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/doguider" class="hvr-bounce-to-bottom">我要当导游</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/question" class="hvr-bounce-to-bottom">我要提问</a></li>
+					</ul>
+			</div>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+	<!-- script-for-menu -->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!--script-for-menu-->
+	
+	
+	<!--start-additional-->
+	<!--start-contact-->
+	<div class="contact">
+		<div class="container">
+			<div class="contact-top heading">
+				<h3>填写个人信息</h3>
+			</div>
+			<div class="contact-bottom">
+				<input type="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+				<input type="text" value="联系方式" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+				<input type="text" value="年龄" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
+				<hr/>
+				<input type="text" value="旅游日期" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+				
+				<input type="text" value="旅游地点" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+				<input type="text" value="预算" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
+				<hr/>
+				<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">旅游信息（包括想去哪里玩，想要得到怎样的体验）</textarea>
+				<div class="submit-btn">
+					<form>
+						<input type="submit" value="提交">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-contact-->
+	<!--end-additional-->
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+		<div class="touch-top heading">
+				<h3>旅度</h3>
+			</div>
+			<div class="touch-bottom">
+				<p>世界那么大，我想去看看</p>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-footer-->
+	
+	
+</body>
+</html>

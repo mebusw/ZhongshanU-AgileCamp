@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Paix Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/static/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/static/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--start-header-->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="head">
+			<div class="logo">
+				<a href="index.html"><img src="/static/images/logo3.png" style="height:80px"alt="" /></a>
+			</div>
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+				
+						<li><a href="http://127.0.0.1:8000/sina/index"  class="active hvr-bounce-to-bottom">首页</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/gonglv" class="hvr-bounce-to-bottom">热门攻略</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/findguider" class="hvr-bounce-to-bottom">我要找导游</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/doguider" class="hvr-bounce-to-bottom">我要当导游</a></li>
+						<li><a href="http://127.0.0.1:8000/sina/question" class="hvr-bounce-to-bottom">我要提问</a></li>
+					</ul>
+			</div>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+	<!-- script-for-menu -->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!-- script-for-menu -->
+	<!--start-banner-->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+				<h1>登录</h1>
+				<div class="banner-bottom">
+					<div class="bnr-one">
+						<div class="bnr-left">
+							<p>Username</p>
+						</div>
+						<div class="bnr-right">
+							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="bnr-one">
+						<div class="bnr-left">
+							<p>Password</p>
+						</div>
+						<div class="bnr-right">
+							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<div class="bnr-btn">
+						<form>
+							<input type="submit" value="Login">
+							<input type="submit" value="注册">
+						</form>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-banner-->
+	<!---start-date-piker---->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script src="js/jquery-ui.js"></script>
+			<script>
+				$(function() {
+				$( "#datepicker,#datepicker1" ).datepicker();
+				});
+			</script>
+	<!---/End-date-piker---->
+	<!---start-why-->
+	<div class="why" id="about">
+		<div class="container">
+			<div class="why-top heading">
+				<h3>旅度是做什么的?</h3>
+				<p>What does the lvdu do?</p>
+			</div>
+			<div class="why-bottom">
+				<div class="col-md-4 why-left">
+					<span class="w-one"></span>
+					<p>提供各地<label>热门攻略</label> 交流旅游, <label>心得与体验</label> 发布旅游经历和经验的平台</p>
+				</div>
+				<div class="col-md-4 why-left">
+					<span class="w-two"></span>
+					<p>为各文化胜地当地人提供<label>对外传播</label> 当地地道文化,体验真实当地文化，<label>沟通起</label> 游客和当地人的平台，当游客切身感受到真实又实惠的旅游体验</p>
+				</div>
+				<div class="col-md-4 why-left">
+					<span class="w-tre"></span>
+					<p>提供各地<label>各种旅游问题交流</label>,了解旅游热门问题，为旅游提前 <label>作好准备</label> 保证你的旅途质量</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-why-->
+	
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+		<div class="touch-top heading">
+				<h3>旅度</h3>
+			</div>
+			<div class="touch-bottom">
+				<p>世界那么大，我想去看看</p>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-footer-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
