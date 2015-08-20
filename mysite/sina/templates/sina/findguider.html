@@ -63,8 +63,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-top heading">
 				<h3>填写个人信息</h3>
 			</div>
-			<div class="contact-bottom">
-				<input type="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+			<form  class="contact-bottom" method = 'post'>
+				{% csrf_token %}
+				<input type="text" value="姓名" onfocus="this.value = '';" name = "name" onblur="if (this.value == '')  {this.value = 'Name';}" />
 				<input type="text" value="联系方式" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
 				<input type="text" value="年龄" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
 				<hr/>
@@ -79,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit" value="提交">
 					</form>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	<!--end-contact-->

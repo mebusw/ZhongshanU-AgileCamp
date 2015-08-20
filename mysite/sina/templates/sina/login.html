@@ -56,40 +56,72 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 	<!-- script-for-menu -->
 	<!--start-banner-->
-	<div class="banner">
+	<!-- <div class="banner">
 		<div class="container">
 			<div class="banner-top">
-				<h1>你好~(～￣▽￣)～</h1>
+				<h1>登录</h1>
 				<div class="banner-bottom">
 					<div class="bnr-one">
-						<!-- <div class="bnr-left">
+						<div class="bnr-left">
 							<p>Username</p>
-						</div> -->
+						</div>
 						<div class="bnr-right">
-							<h2>{{ username }}</h2>
+							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="bnr-one">
-						<!-- <div class="bnr-left">
+						<div class="bnr-left">
 							<p>Password</p>
 						</div>
 						<div class="bnr-right">
 							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>
-						</div> -->
+						</div>
 						<div class="clearfix"></div>
 					</div>
 					
 					
-					<!-- <div class="bnr-btn">
+					<div class="bnr-btn">
 						<form>
 							<input type="submit" value="Login">
 							<input type="submit" value="注册">
 						</form>
-					</div> -->
+					</div>
 					
 					
 				</div>
+			</div>
+		</div> -->
+
+	<!-- <form action = './' method = 'post'> -->
+	<!-- {%csrf_token %}
+	<label>Username</label>
+	<input name='username' />
+	<br/>
+	<label>Password</label>
+	<input name='password' type = 'password' />
+	<p><a class="btn btn-primary btn-lg" method = 'post' enctype="multipart/form-data" role="button">Login</a></p> -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+				<form method = 'post' enctype="multipart/form-data">
+				    {% csrf_token %}
+					<div style="position: relative; left:100px">
+				    {{uf.as_p}}
+					</div>
+					<div class="bnr-btn">
+						<form>
+							<input type="submit" value="Login">
+							<a href="http://127.0.0.1:8000/sina/regist/">注册</a>
+						</form>
+					</div> 
+					<!-- <div style="position: relative; left:100px">
+				    <p><input class="btn btn-primary btn-lg" type="submit"></a> -->
+				    <!-- <input type="submit" value = "ok" /> -->
+					<!-- <a class="btn btn-primary btn-lg" href="http://127.0.0.1:8000/sina/regist/" role="button">注册</a></p> -->
+					<!-- <a href="http://127.0.0.1:8000/sina/regist/">注册</a> -->
+					<!-- </div> -->
+				</form>
 			</div>
 		</div>
 	</div>
