@@ -22,8 +22,17 @@ def index(request):
 	else:
 		return render(request, 'sina/fail.html')
 def signup(request):
-	return render(request, 'sina/signup.html')
-
+	usr = request.POST.get('user','')
+	password = request.POST.get('password','')
+	if(usr==''):
+		return render(request, 'sina/signup.html')
+	else:
+		user_exist = User.objects.filter(_usr=usr)
+		if(user_exist.count()==0):#If the object does not exist, create it
+			User.objects.create(_usr=usr, _pwd=password, _mail='')
+			return render(request, 'sina/index.html',{'usr':usr})
+		else:#Already exist
+			return render(request, 'sina/signup.html',{'msg':'Your user has been registered'})
 def verify(request):
 	usr = request.POST.get('username','')
 	pwd = request.POST.get('password','')
@@ -41,14 +50,13 @@ def verify(request):
 		{'msg': 'Hello ' + usr +', your username has been used , please try another one.'})
 
 def signin(request):
-	from sina.models import User
 	usr = request.POST.get('user','')
 	pwd = request.POST.get('password','')
 	u = User.objects.filter(_usr=usr)
 	if(usr == ''):
 		return render(request, 'sina/signin.html')
 	elif(u._usr==usr and u._pwd == pwd):
-		return render(request, 'sina/index.html',{'msg':'Hello '+ u._usr})
+		return render(request, 'sina/index.html',{'msg':'Hello '+ usr})
 	else:
 		return render(request, 'sina/fail.html')
 
