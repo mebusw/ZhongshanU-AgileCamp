@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Home</title>
-<link href="{% static 'css/bootstrap.css' %} " rel='stylesheet' type='text/css' />
+<link href="{% static 'css_pro/bootstrap.css' %} " rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
 <script src="{% static 'js_pro/jquery.min.js' %} "></script>
 <!-- Custom Theme files -->
@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-sm-3 col-md-2 sidebar">
 		 <div class="sidebar_top">
 			 <h1>头像</h1> 
-			 <img src="images/avt.png" alt=""/>
+			 <img src="{% static 'images_pro/avt.png' %}"  alt=""/>
 		 </div>
 		<div class="details">
 			 <h3>用户名</h3>
@@ -100,23 +100,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="skill1">
 					 <h4>1st. 提交关键词</h4>
 					 <ul>					 
-						<li>地点：珠海</li>
-						<li>时间：8月</li>
-						<li>出发地：广州</li>
-						<li>人数：2人</li>
-						<li>预算：2000</li>
-						<li>备注：3日游</li>
+						<li>地点：{{toWhere}}</li>
+						<li>时间：{{when}}</li>
+						<li>出发地：{{peopleAmount}}</li>
+						<li>人数：{{fromWhere}}</li>
+						<li>预算：{{budget}}</li>
+						<li>备注：{{otherRequest}}</li>
 					 </ul>
 				 </div>
 				 <div class="skill2">
 					 <h4>2nd. 提交关键词</h4>
 					 <ul>					 
-						<li>地点：云南</li>
-						<li>时间：1月</li>
-						<li>出发地：广州</li>
-						<li>人数：5人</li>
-						<li>预算：2000</li>
-						<li>备注：7日游</li>
+						<li>地点：{{toWhere}}</li>
+						<li>时间：{{when}}</li>
+						<li>出发地：{{peopleAmount}}</li>
+						<li>人数：{{fromWhere}}</li>
+						<li>预算：{{budget}}</li>
+						<li>备注：{{otherRequest}}</li>
 					 </ul>
 				 </div>
 				 <div class="clearfix"></div>

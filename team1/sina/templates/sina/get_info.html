@@ -23,7 +23,8 @@
 </head>
 <body>
 <section>
-	<form id="theForm" class="simform" autocomplete="off" action='./info' method='post'>
+	<form id="theForm" class="simform" autocomplete="off" action='./profile' method='post'>
+		{% csrf_token %}
 		<div class="simform-inner">
 		<div style="text-align:center; font: 'MicroSoft YaHei';">
 			<ol class="questions">
