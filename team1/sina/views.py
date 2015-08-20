@@ -73,4 +73,7 @@ def more(request):
 	
 def ask(request):
 	return render(request, 'sina/ask.html')
+
+def getinfo(request):
+	return render(request, 'sina/get_info.html')
 	
