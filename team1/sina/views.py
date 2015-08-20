@@ -44,7 +44,7 @@ def signin(request):
 	u = User.objects.get(_usr=usr)
 	if(u._usr==usr and u._pwd == pwd):
 		#<script> 
-		#	alert("内弄是“欢迎进入本站”之类的 "); 
+		 
 		#</script>
 		return render(request, 'sina/index_good.html',{'msg':'Hello '+ u._usr})
 	else:
