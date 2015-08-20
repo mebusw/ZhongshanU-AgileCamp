@@ -2,8 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 #http://127.0.0.1:8000/sina/
-from sina.models import User
-from django.core.exceptions import ObjectDoesNotExist
+from sina.models import User,Question,Guide	
 def index(request):
 	from sina.models import User	
 	usr = request.POST.get('username','noname')
@@ -42,22 +41,34 @@ def verify(request):
 def signin(request):
 	usr = request.POST.get('user','')
 	pwd = request.POST.get('password','')
-	if(usr =='E-mail address/Username'):
-		return render(request,'sina/signin.html', {'warning':'Not ok'})
-	try:
-		u = User.objects.get(_usr=usr)	
-		if(u._usr==''):
-			return render(request, 'sina/',{'msg':'Hello, Guest!'})
-		elif(u._usr==usr and u._pwd == pwd):
-			return render(request, 'sina/index.html',{'msg':'Hello,'+ u._usr +'!'})
-		else:
-			return render(request, 'sina/fail.html')
-	except  ObjectDoesNotExist as e:
-		return render(request, 'sina/signin.html')
+	u = User.objects.get(_usr=usr)
+	if(u._usr==usr and u._pwd == pwd):
+		#<script> 
+		#	alert("内弄是“欢迎进入本站”之类的 "); 
+		#</script>
+		return render(request, 'sina/index_good.html',{'msg':'Hello '+ u._usr})
+	else:
+		return render(request, 'sina/fail.html')
 
+def ask(request):
+	question = request.POST.get('question','')
+	q = Question.objects.create(_question = question)
+	return render(request, 'sina/ask.html')
 def more(request):
 	return render(request, 'sina/more.html')
-	
-def ask(request):
-	return render(request, 'sina/ask.html')
-	
+
+def getinfo(request):
+# 	toWhere = request.POST.get('q1','')
+# 	when = request.POST.get('q2','')
+# 	peopleAmount = request.POST.get('q3','')
+# 	fromWhere = request.POST.get('q4','')
+# 	budget = request.POST.get('q5','')
+# 	otherRequest = request.POST.get('q6','')
+# 	guide = Guide.objects.create(_toWhere = toWhere,_when = when
+# 		_peopleAmount = peopleAmount , _fromWhere = fromWhere,
+# 		_budget = budget , _otherRequest = otherRequest)
+
+	return render(request,'sina/getinfo.html')
+
+def profile(request):
+	return render(request, 'sina/profile.html')
