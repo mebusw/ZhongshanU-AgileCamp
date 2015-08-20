@@ -1,0 +1,52 @@
+﻿
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script language="JavaScript">
+function myrefresh(){
+    window.location.reload();
+}
+setTimeout('myrefresh()',15000);
+</script>
+
+<div class="panel panel-primary" style=" margin: 200px">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Waiting Customers</div>
+
+  <!-- Table -->
+
+  <table class="table">
+    <tr>
+        <td>set name</td>
+        <td>number</td>
+        <td>index</td>
+        <td>next_button</td>
+    </tr>
+   <form align="center" action="/homepage" method="get">
+    <tr>
+        <td><text/>Set<input  id="dish" name="dish" value="A" style="width:15px;border:0px;background-color:#ffffff" readonly ></td>
+        <td>{{tot_a}}</td>
+        <td>{{num_a}}</td>
+        <td><button class="btn btn-primary" type="button" onclick="submit()"> Next<span class="glyphicon glyphicon-triangle-right" /span></button></td>
+    </tr>
+	</form>
+	  <form align="center" action="/homepage" method="get">
+    <tr>
+        <td><text/>Set<input   id="dish" name="dish" value="B" style="width:15px;border:0px;background-color:#ffffff" readonly ></td>
+        <td>{{tot_b}}</td>
+        <td>{{num_b}}</td>
+        <td><button class="btn btn-primary" type="button" onclick="submit()"> Next<span class="glyphicon glyphicon-triangle-right" /span></button></td>
+    </tr>
+	</form>
+	  <form align="center" action="/homepage" method="get">
+    <tr>
+        <td><text>Set</text><input id="dish" name="dish" value="C" style="width:15px;border:0px;background-color:#ffffff" readonly ></td>
+        <td>{{tot_c}}</td>
+        <td>{{num_c}}</td>
+        <td><button class="btn btn-primary" type="button" onclick="submit()"> Next<span class="glyphicon glyphicon-triangle-right" /span></button></td>
+    </tr>
+	</form>
+  </table>
+
+</div>

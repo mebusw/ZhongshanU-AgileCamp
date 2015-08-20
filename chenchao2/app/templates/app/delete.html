@@ -1,0 +1,94 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<html>
+ <head>
+    <base href="<%=basePath%>">
+    
+     <title>确认撤销订单</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">  
+	<meta http-equiv="Content-Type" content="text/html;charset=GB2312"> 
+
+  </head>
+  
+<body   background="images/back.jpg">
+
+<table align="center"   cellspacing="1px"   width="500px"  height="100px">
+<form align="center" action="/index" method="get">
+
+  <p>
+    <div style="padding-left:400px;width:1700px" class="box">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail" >		
+				<div class="jumbotron" style="color:#6666FF">
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to SYSU-canteen</h3>
+					<h2>&nbsp;&nbsp;&nbsp;&nbsp;Cancel Order</h2>
+				</div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;
+				Set &nbsp;&nbsp;<input id="dish" name="dish" value="" width="50"/></p>
+				<img src="/static/{{dish}}.jpg" alt="..." style="height:280">
+				
+				<div class="caption">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					<button type="button" class="btn btn-primary" padding-left="100px" onclick="javascript:window.location.href='/index?id={{id}}&del=yes'">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button type="button" class="btn btn-primary" onclick="submit()">No</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </p>
+  <input style="display:none" name="operate" value="no">
+    <input style="display:none" name="id" value="{{id}}">
+  
+</form>
+</table>
+
+<!--  
+	<h1 align="center">点餐确认</h1>
+	<table align="center"   cellspacing="1px"   width="500px"  height="100px">
+	<form action="/index" method="get">
+	<tr>
+	<th>
+	<text id="name">您所选择的菜式为</text></th>
+	<td>
+	<input id="dish" name="dish" value=""/>套餐</td>
+	</tr>
+	<tr>
+	<td><button type="button" padding-left="100px" onclick="submit()">确认</button></td>
+	<td><button type="button" onclick="javascript:window.location.href='index'">取消</button></td>
+	</tr>
+	</form>
+	</table>
+-->
+	
+	</body>	   
+ <script type="text/javascript">  
+    var LocString=String(window.document.location.href);  
+      
+    function getQueryStr(str){  
+        var rs = new RegExp("(^|)"+str+"=([^/&]*)(/&|$)","gi").exec(LocString), tmp;  
+      
+        if(tmp=rs){  
+            return tmp[2];  
+        }  
+      
+        // parameter cannot be found  
+        return "";  
+    }  
+  
+    document.getElementById("dish").value = getQueryStr("dish");  
+
+</script>   
+  
+ 			
+</html>
+

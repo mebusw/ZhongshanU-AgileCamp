@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class="jumbotron" style="color:#6666FF">
+  <h1>&nbsp;Welcome to SYSU-canteen</h1>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;provide best canteen-style food</p>
+  <font size="20px">&nbsp;&nbsp;Top 3 This Week&nbsp;&nbsp;&nbsp;&nbsp;</font>
+	<img src="/static/{{top1}}.jpg" alt="..."style="height:150;width:250">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="/static/{{top2}}.jpg" alt="..."style="height:150;width:250">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="/static/{{top3}}.jpg" alt="..."style="height:150;width:250">
+</div>
+
+<div class="page-header">
+  <h1>&nbsp;Hello, please choose your dish <button class="btn btn-primary" type="button">
+  Total <span class="badge" type="text" id="num" name="num" >{{tot}}</span></h1>
+</button>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+    <h4>set - A <span  class="badge" >{{tot_a}}</span></h4>
+      <img src="/static/{{dishes}}.jpg" alt="..." style="height:280">
+      <div class="caption">
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button" onclick="javascript:window.location.href='test?dish=A'">点餐</a> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+    <h4>set - B <span class="badge">{{tot_b}}</span></h4>
+      <img src="/static/B.jpg" alt="..."style="height:280">
+      <div class="caption">
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button" onclick="javascript:window.location.href='test?dish=B'">点餐</a> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+    <h4>set - C <span class="badge">{{tot_c}}</span></h4>
+      <img src="/static/C.jpg" alt="..."style="height:280;width:380">
+      <div class="caption">
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button" onclick="javascript:window.location.href='test?dish=C'">点餐</a> 
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="jumbotron" style="color:#6666FF">
+  <h2 align="center"> 您所点的菜为：<span class="badge">{{kind}}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 您的号码为：<span class="badge">{{id}}</span> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+<a href="#" class="btn btn-primary" role="button" onclick="javascript:window.location.href='delete?id={{id}}&dish={{kind}}'">取消订单</a> 
+  </h2>
+</div>
+
+
+
+<script type="text/javascript">  
+    var LocString=String(window.document.location.href);  
+      
+    function getQueryStr(str){  
+        var rs = new RegExp("(^|)"+str+"=([^/&]*)(/&|$)","gi").exec(LocString), tmp;  
+      
+        if(tmp=rs){  
+            return tmp[2];  
+        }  
+      
+        // parameter cannot be found  
+        return "";  
+    }  
+   
+
+</script>  
