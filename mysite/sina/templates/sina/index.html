@@ -1,14 +1,27 @@
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-
-<h1>欢迎使用XXX停车软件</h1>
-<h1>你的自行车上次停在：{{ pla }}</h1>
-
-<form action='./' method = 'post'>
-	{% csrf_token %}
-	<label>停车在</label>
-	<input name = 'place' >
-	<button>停车</button>
-</form>
-
-{{list}}
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+		<form action='./' method = 'post'>
+		<fieldset>
+			<legend>停车功能</legend> <label>尝试写下您的停车位置：</label>
+			{% csrf_token %}
+			<p>
+			<input name = 'place' >
+			</p>
+			<p>
+			<button class="btn" type="submit"> 停车 </button>
+			<button class="btn btn-danger" type="button">忘记停车位置</button>
+			</p>
+		</form>
+			<blockquote>
+				<p>
+					您的车上次停在：
+				</p> <large>{{pla}}</large>
+				<p>
+					您的车有可能停在：
+				</p><large>{{maybe_place}}</large>
+			</blockquote> 
+		</div>
+	</div>
+</div>
