@@ -69,3 +69,6 @@ def getinfo(request):
 # 		_budget = budget , _otherRequest = otherRequest)
 
 	return render(request,'sina/getinfo.html')
+
+def profile(request):
+	return render(request, 'sina/profile.html')
