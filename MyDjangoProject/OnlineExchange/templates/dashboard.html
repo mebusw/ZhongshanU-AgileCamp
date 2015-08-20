@@ -14,6 +14,9 @@
     <link type="text/css" rel="stylesheet" href="/static/css/groundwork.css">
     <script type="text/javascript">
         $(document).ready(function(){
+            var index = parseInt(document.getElementById("selectCat").name)
+            //alert(index)
+            document.getElementById("selectCat").options[index].selected = true
             $("a").click(function(){
                 var id = $(this).attr("id")
                 var check = true
@@ -95,6 +98,14 @@
                 }
             });
         });
+
+        function processChange(value){
+            if (value == "0")
+                window.location.href = "/dashboard"
+            else{
+                window.location.href = "/dashboard?category="+value
+            }
+        }
     </script>
 </head>
 <body>
@@ -120,12 +131,23 @@
                         <li><a id="homepage"><i class="icon-male"></i> 个人主页</a></li>
                         <li><a id="necessity"><i class="icon-upload-alt"></i> 发布需求</a></li>
                         <li><a id="add"><i class="icon-plus"></i> 闲置物品</a></li>
+                        <li><a id="myproduct"><i class="icon-external-link-sign"></i> 我的发布</a></li>
                     {% endif %}
                 </ul>
             </nav>
         </div>
      </header>
          <div class="container">
+            <div class="row" style="margin-left: 1px; margin-bottom: 7px">
+                <div class="one fourth">
+                <select class="selectpicker" onchange="processChange(this.options[this.options.selectedIndex].value)" id="selectCat" name="{{ category }}">
+                    <option value="0">全部</option>
+                    <option value="1">电子产品</option>
+                    <option value="2">书籍</option>
+                    <option value="3">体育用品</option>
+                </select>
+                </div>
+            </div>
             <div class="bs-example" data-example-id="thumbnails-with-custom-content">
                 {% for productsInOneRow in products %}
                 <div class="row">
@@ -140,7 +162,7 @@
                                 {% else %}
                                     <p style="font-family: Calibri">{{ product.description }}</p>
                                 {% endif %}
-                                <p><h5>Post by:&nbsp;&nbsp;<a id="uname" name="{{ product.uid }}">{{ product.uname }}</a></h5></p>
+                                <p><h5>Post by:&nbsp;&nbsp;<a id="postername" name="{{ product.uid }}" style="text-decoration:NONE; color: gray; font-family: calibri">{{ product.uname }}</a></h5></p>
                             </div>
                         </div>
                     </div>

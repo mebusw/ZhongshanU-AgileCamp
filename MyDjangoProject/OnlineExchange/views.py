@@ -33,7 +33,12 @@ def dash(request):
     else:
         username = ""
         uname = ""
-    products = Product.objects.all()
+    TYPE = request.GET.get("category", "0")
+    if TYPE == '0':
+        products = Product.objects.all()
+        print "type is ", type(products[0].type)
+    else:
+        products = [product for product in Product.objects.all() if product.type.encode('utf8') == TYPE]
     count = 1
     productsInOneRow = []
     totalProducts = []
@@ -50,7 +55,7 @@ def dash(request):
     #resp = HttpResponse(render(request, 'dashboard.html', {'username': username, 'uname': uname}))
     #resp.delete_cookie('username', path='')
     #return render(request, 'dashboard.html', {'username': username, 'uname': uname})
-    return render(request, 'dashboard.html', {'username': username, 'uname': uname, 'products': totalProducts})
+    return render(request, 'dashboard.html', {'username': username, 'uname': uname, 'products': totalProducts, 'category': TYPE})
 
 
 def login(request):
@@ -123,9 +128,9 @@ def register(request):
 
 
 def getCategory(request):
-    '''
+    """
     user search interface, search key is product type
-    '''
+    """
     category = request.GET.get('type', '')
     if category == '':
         # query content is empty
@@ -140,9 +145,9 @@ def getCategory(request):
 
 
 def getMyProduct(request):
-    '''
+    """
     user search interface, scan the products of current user
-    '''
+    """
     uid = request.GET.get('uid', None)
 
     if uid:
@@ -155,3 +160,12 @@ def getMyProduct(request):
     else:
         response = HttpResponse(status=403)
         return response
+
+
+def homepage(request):
+    """
+    user interface to home page
+    """
+    pass
+
+

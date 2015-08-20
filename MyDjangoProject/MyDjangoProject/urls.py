@@ -14,4 +14,5 @@ urlpatterns = patterns('',
     url(r'^register', 'OnlineExchange.views.register', name='register'),
     url(r'^myproduct', 'OnlineExchange.views.getMyProduct', name='myproduct'),
     url(r'^logout', 'OnlineExchange.views.logout', name='logout'),
+    url(r'^homepage', 'OnlineExchange.views.logout', name='logout'),
 )
