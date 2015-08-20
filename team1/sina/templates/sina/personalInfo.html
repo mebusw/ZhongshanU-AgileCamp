@@ -1,0 +1,121 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link href="{%static 'css_main/style.css'%}"  rel="stylesheet" >
+  <link href="{%static 'css_main/bootstrap.css'%}"  rel="stylesheet" >
+  <!--web-font-->
+  <link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  <!--//web-font-->
+  <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Taisteal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- //Custom Theme files -->
+  <!-- js -->
+  <script src="js_main/jquery.min.js"></script>
+  <script src="js_main/modernizr.custom.js"></script>
+  <!-- //js -->
+  <!-- start-smoth-scrolling-->
+  <script type="text/javascript" src="js_main/move-top.js"></script>
+  <script type="text/javascript" src="js_main/easing.js"></script>
+  <script type="text/javascript" src="js_main/modernizr.custom.53451.js"></script>
+  <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+  </script>
+  <!--//end-smoth-scrolling-->
+</head>
+
+
+
+
+<body>
+	<!--banner-->
+	<div class="banner">
+		<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><img src="{%static 'images/logo.png'%}" alt="logo"/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul class="nav1">
+					<li><a href="index.html" class="active scroll"><font face="黑体">首页</font></a></li>
+					<li><a href="#about" class="scroll"><font face="黑体">路线</font></a></li>
+					<li><a href="#portfolio" class="scroll"><font face="黑体">问答</font></a></li>
+					<li><a href="#team" class="scroll"><font face="黑体">个人信息</font></a></li>
+					<li><a href="#blog" class="scroll"><font face="黑体">登陆</font></a></li>
+					<li><a href="#contact" class="scroll"><font face="黑体">联系我们</font></a></li>
+				</ul>
+				<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.nav1" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//header-->
+        <!--Personal Information begin-->
+		<div class="container", style="height:1000px">
+			<div class="banner-title">
+
+
+				<h1><font face="黑体"><span>Janson' World</span></font></h1>
+                <h2>999 followers</h2>
+                <h2>Hobby: guitar and basketball</h2>
+                <h2>Food: coffee, caviar</h2>
+                <h2>Email: jason@123.com</h2>
+				<h2>From: Guangdong Province, China</h2>
+                <h2>Has Visited: Korea, Spain</h2>
+                <h2>Wish: a trip to France or Italy</h2>
+                <h2>Travel Journal: Have Fun in Korea, Meet Beauty in Spain</h2>
+				<div class="download">
+					<a href="#">Follow Him</a>
+				</div>
+                <div class="download">
+					<a href="#">Send Message to Him</a>
+				</div>
+
+
+
+			</div>
+		</div>
+        <!--Personal Information end-->
+	</div>
+	<!--//banner-->
+
+
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+</body>
+</html>

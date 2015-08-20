@@ -10,7 +10,7 @@ def index(request):
 	p = User.objects.filter(_usr=usr)
 	p_quan = p.count()
 	if(usr == 'noname'):
-		return render(request, 'sina/signin.html')
+		return render(request, 'sina/index.html')
 	elif(usr =='jason' and pwd == '123'):
 		return render(request, 'sina/ok.html',
 		{'usr':'Hello ' + usr, 'pwd':pwd})
@@ -54,16 +54,18 @@ def ask(request):
 	question = request.POST.get('question','')
 	q = Question.objects.create(_question = question)
 	return render(request, 'sina/ask.html')
+def more(request):
+	return render(request, 'sina/more.html')
 
 def getinfo(request):
-	toWhere = request.POST.get('q1','')
-	when = request.POST.get('q2','')
-	peopleAmount = request.POST.get('q3','')
-	fromWhere = request.POST.get('q4','')
-	budget = request.POST.get('q5','')
-	otherRequest = request.POST.get('q6','')
-	guide = Guide.objects.create(_toWhere = toWhere,_when = when
-		_peopleAmount = peopleAmount , _fromWhere = fromWhere,
-		_budget = budget , _otherRequest = otherRequest)
+# 	toWhere = request.POST.get('q1','')
+# 	when = request.POST.get('q2','')
+# 	peopleAmount = request.POST.get('q3','')
+# 	fromWhere = request.POST.get('q4','')
+# 	budget = request.POST.get('q5','')
+# 	otherRequest = request.POST.get('q6','')
+# 	guide = Guide.objects.create(_toWhere = toWhere,_when = when
+# 		_peopleAmount = peopleAmount , _fromWhere = fromWhere,
+# 		_budget = budget , _otherRequest = otherRequest)
 
 	return render(request,'sina/getinfo.html')
