@@ -15,7 +15,6 @@
 <style type="text/css">
 		#subbut{
 			margin-left:40%;
-
 		}
 </style>
 
@@ -74,7 +73,6 @@
 <script type="text/javascript" src="{%static 'js_info/stepsForm.js'%}"></script>
 <script type="text/javascript">
 var theForm = document.getElementById( 'theForm' );
-var counter=0;
 new stepsForm( theForm, {
 	onSubmit : function( form ) {
 		// hide form
@@ -90,20 +88,9 @@ new stepsForm( theForm, {
 		var messageEl = theForm.querySelector( '.final-message' );
 		messageEl.innerHTML = '谢谢你';
 		classie.addClass( messageEl, 'show' );
-		counter++;		
-		if(counter == 5)
-			insert();
 	}
 } );
 </script>
-<script type="text/javascript">
-	function insert(){
-   var insertText = "<input type='submit'/ value='Submit'>";
-   document.getElementById("insert").innerHTML(insertText);
-}
-<body>
-</script>>
-
 
 </body>
 </html>

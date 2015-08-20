@@ -12,5 +12,4 @@ urlpatterns = patterns('sina.views',
      url(r'^ask$','ask'),
      url(r'^getinfo$','getinfo'),
      url(r'^profile$','profile'),
-
 )

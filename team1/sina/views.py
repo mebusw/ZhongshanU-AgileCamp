@@ -67,8 +67,7 @@ def getinfo(request):
 # 	guide = Guide.objects.create(_toWhere = toWhere,_when = when
 # 		_peopleAmount = peopleAmount , _fromWhere = fromWhere,
 # 		_budget = budget , _otherRequest = otherRequest)
-
-	return render(request,'sina/getinfo.html')
+	return render(request,'sina/get_info.html')
 
 def profile(request):
 	return render(request, 'sina/profile.html')
