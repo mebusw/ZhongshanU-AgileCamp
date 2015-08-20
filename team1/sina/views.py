@@ -21,6 +21,21 @@ def index(request):
 	else:
 		return render(request, 'sina/fail.html')
 def signup(request):
+	usr = request.POST.get('user','')
+	pwd = request.POST.get('password','')
+	mail = request.POST.get('email','')
+	q = User.objects.filter(_usr=usr)
+	quan = q.count()
+	if (usr==''):
+		return render(request, 'sina/signup.html')
+	if quan == 0:
+		User.objects.create(_usr = usr , _pwd = pwd , _mail = mail)
+		if(1):
+			return render(request, 'sina/verified.html',
+			{'msg': 'Hello ' + usr +', we sent a verified email to ' + mail})
+	else:
+		return render(request, 'sina/not_verified.html',
+		{'msg': 'Hello ' + usr +', your username has been used , please try another one.'})
 	return render(request, 'sina/signup.html')
 
 def verify(request):
@@ -28,9 +43,9 @@ def verify(request):
 	pwd = request.POST.get('password','')
 	mail = request.POST.get('email','')
 	q = User.objects.filter(_usr=usr)
-	quan = q.count()
+	count = q.count()
 		
-	if quan == 0:
+	if count == 0:
 		User.objects.create(_usr = usr , _pwd = pwd , _mail = mail)
 		if(1):
 			return render(request, 'sina/verified.html',
@@ -42,18 +57,16 @@ def verify(request):
 def signin(request):
 	usr = request.POST.get('user','')
 	pwd = request.POST.get('password','')
-	if(usr =='E-mail address/Username'):
-		return render(request,'sina/signin.html', {'warning':'Not ok'})
 	try:
 		u = User.objects.get(_usr=usr)	
-		if(u._usr==''):
-			return render(request, 'sina/',{'msg':'Hello, Guest!'})
+		if(usr==''):
+			return render(request, 'sina/signin.html',{'msg':'Hello, Guest!'})
 		elif(u._usr==usr and u._pwd == pwd):
 			return render(request, 'sina/index.html',{'msg':'Hello,'+ u._usr +'!'})
 		else:
 			return render(request, 'sina/fail.html')
 	except  ObjectDoesNotExist as e:
-		return render(request, 'sina/signin.html')
+		return render(request, 'sina/signin.html', {'warning':'Not ok'})
 
 def more(request):
 	return render(request, 'sina/more.html')
