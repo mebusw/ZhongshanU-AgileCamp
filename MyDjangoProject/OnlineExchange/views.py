@@ -1,3 +1,5 @@
+# -*-coding:utf-8-*-
+
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from OnlineExchange.models import User, Product
@@ -31,15 +33,29 @@ def dash(request):
     else:
         username = ""
         uname = ""
+    products = Product.objects.all()
+    count = 1
+    productsInOneRow = []
+    totalProducts = []
+    for product in products:
+        if len(product.description) > 40:
+            product.description = product.description[:40] + '...'
+        if len(product.pname) > 13:
+            product.pname = product.pname[:13] + '...'
+        productsInOneRow.append(product)
+        if count % 3 == 0:
+            totalProducts.append(productsInOneRow)
+            productsInOneRow = []
+        count += 1
     #resp = HttpResponse(render(request, 'dashboard.html', {'username': username, 'uname': uname}))
     #resp.delete_cookie('username', path='')
     #return render(request, 'dashboard.html', {'username': username, 'uname': uname})
-    return render(request, 'dashboard.html', {'username': username, 'uname': uname})
+    return render(request, 'dashboard.html', {'username': username, 'uname': uname, 'products': totalProducts})
 
 
 def login(request):
     """
-
+    user login interface
     """
     username = request.GET.get('username', 'noname')
     password = request.GET.get('password', 'nopassword')
@@ -133,7 +149,6 @@ def getMyProduct(request):
         products = Product.objects.GET.get('uid' == uid)
         productDir = {}
         productDir['products'] = products
-
         response = HttpResponse(json.dumps(productDir), content_type="application/json")
         return response
 

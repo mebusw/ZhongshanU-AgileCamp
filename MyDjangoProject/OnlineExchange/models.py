@@ -13,6 +13,7 @@ class User(models.Model):
 
 class Product(models.Model):
     uid = models.IntegerField()
+    uname = models.CharField(max_length=30)
     pid = models.IntegerField(primary_key=True)
     pname = models.CharField(max_length=100)
     date = models.DateField()

@@ -106,9 +106,10 @@
 			    </div>
                 <div class="one half">
                     {% if username %}
-                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br>你好, {{ uname }}&nbsp;&nbsp;&nbsp;&nbsp;<a id="logout" style="color: #ff0000;text-decoration: NONE">退出登录</a></p>
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><input type="text" id="query" placeholder="商品类型/商品名称/商品持有人" /><button id="search"><i class="icon-search"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好, {{ uname }}&nbsp;&nbsp;&nbsp;&nbsp;<a id="logout" style="color: #ff0000;text-decoration: NONE">退出登录</a></p>
                     {% else %}
-                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><br><br><a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-toggle="modal" data-target="#registerModal">注册</a></p>
+                    <p class="small no-pad-small-tablet align-right align-left-small-tablet"><input type="text" id="query" placeholder="商品类型/商品名称/商品持有人" /><button id="search"><i class="icon-search"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="login" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-toggle="modal" data-target="#registerModal">注册</a></p>
                     {% endif %}
                 </div>
             </div>
@@ -124,8 +125,30 @@
             </nav>
         </div>
      </header>
-
-
+         <div class="container">
+            <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+                {% for productsInOneRow in products %}
+                <div class="row">
+                    {% for product in productsInOneRow %}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" style="height: 270px">
+                            <img src="{{ product.url }}" alt="Generic placeholder thumbnail" style="height: 130px; width: 170px"/>
+                            <div class="caption">
+                                <h3><a id="pname" name="{{ product.pid }}" style="color: #2b3c4e">{{ product.pname }}</a></h3>
+                                {% if product.description.length < 100 %}
+                                    <p style="font-family: Calibri">{{ product.description }}</p>
+                                {% else %}
+                                    <p style="font-family: Calibri">{{ product.description }}</p>
+                                {% endif %}
+                                <p><h5>Post by:&nbsp;&nbsp;<a id="uname" name="{{ product.uid }}">{{ product.uname }}</a></h5></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+         </div>
 
 
 <!-- 模态框（Modal） -->
