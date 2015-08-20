@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="gb2321">
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+		<link href="signin.css" rel="stylesheet"></link>
+		<link type="text/css" rel="stylesheet" href="{% static "style.css"%}" ></link>
+		<title>晓-日出就出发</title>
+	
+	</head>
+
+	<body>
+
+		<div id="Title">
+			
+			<div id="hw"></div>
+			<h2 id="hw2"></h2>
+			<h3 id="hw3"></h3>
+			<div id="hw4"></div>
+			
+		</div>
+		
+		{{usr}}
+		<form method='post' action='./signup'>
+			<button id="sut" class='button button-primary button-circle button-small'name='su'>sign up</button>
+			{% csrf_token %}
+		</form>
+		
+		<div class='container'>
+			<form class='form-signin' action='./' method='post'>
+				<h1 class=form-signin-heading>Hello World</h1>
+				{% csrf_token %}
+			
+				<label>User Name </label>
+				<input class='form-control' name='username' placeholder='Like Michael'/>
+				<br/>
+				<label>Password </label>
+				<input class='form-control' type='password' placeholder='********' name='password' />
+				<br/>
+				<button class='btn btn-primary'>Login</button>
+			</form>
+		</div>
+	</body>
+</html>
+
+

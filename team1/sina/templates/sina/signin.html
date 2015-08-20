@@ -37,8 +37,8 @@
 		<form action='./signin' method="post">
 				{% csrf_token %}
 				<div class="cam"><img src="images/cam.png" class="img-responsive" alt="" /></div>
-				<input type="text" name='user' class="text" value="E-mail address/Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address/Username';}" />
-				<input type="password" name='password' value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"/>
+				<input type="text" name='user' class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address/Username';}" required="required"/>
+				<input type="password" name='password' value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="required"/>
 				<div class="submit"><input type="submit" value="Sign in"> </div>
 				<div class="clear"></div>
 				<div class="buttons">
