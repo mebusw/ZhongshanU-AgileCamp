@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flat UI Free</title>
+    <title>晓 - 一问就晓</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -126,37 +126,40 @@
             </li>
             <li><a href="#"><span class="visible-sm visible-xs">Settings<span class="fui-gear"></span></span><span class="visible-md visible-lg"><span class="fui-gear"></span></span></a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
+        </div>
+            <!-- /.navbar-collapse -->
       </nav>
-<div style="border:18px solid AliceBlue;padding:3px;">
+<div style="border:18px white;padding:3px;">
     <font style="line-height:100%;" size="5" face="Microsoft YaHei" >
-    <h3>一问就晓</h3>
-    
+    <!--<h3>一问就晓</h3>-->
+
     <div class="container">
     <div class="row">
       <div class="row">
-        <div class="col-lg-6">
+        <!--<div class="col-lg-6">-->
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group" style="width:750px">
+
               <input type="text" class="form-control">
-              <div class="input-group-btn">
-                <button tabindex="-1" class="btn btn-default" type="button">选项</button>
+              <div class="input-group-btn"><form action="./submitPage/" method="post">{% csrf_token %}
+                <button tabindex="-1" class="btn btn-default" type="button">一问就晓</button>
                 <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
                   <span class="caret"></span>
                 </button>
                 <ul role="menu" class="dropdown-menu pull-right">
-                  <li><a href="#">找问题</a></li>
+                  <!--<li><a href="#">找问题</a></li>-->
                   <li><a href="#">我想问问</a></li>
-                  <li class="divider"></li>
+                  <!--<li class="divider"></li>-->
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div>
-            </div><!-- /.input-group -->
+
+            </div> <!--/.input-group -->
           </div><!-- /.form-group -->
-        </div><!-- /.col-lg-6 -->
+        <!--</div> /.col-lg-6 -->
       </div><!-- /.row -->
     </div><!-- /.container -->
-   
+ <!--
 <font style="line-height:250%;" size="3" face="Microsoft YaHei" >
     <form action="./submitPage/" method="post">{% csrf_token %}
       <p>
@@ -182,22 +185,58 @@
       </div>
     </p>
     <hr /></font>
-
-<div style="margin-left:auto;margin-right:auto">
-   <div class="col-xs-5">
-            <div class="footer-banner">
-              <h3 class="footer-title">Get Flat UI Pro</h3>
+-->
+<!--<div style="margin-left:auto;margin-right:auto">-->
+   <!--div style="height:1000px">-->
+            <div class="footer-banner" style="height:1050px;width:640px;font:3">
+              <h3 class="footer-title">问题推荐</h3>
               <ul>
-                <li><a href="http://www.baidu.com" >珠海有什么景点好玩的？</a></li> <br>
                 <li><a href="http://www.baidu.com" >珠海有什么景点好玩的？</a></li> <br>
                 <li><a href="http://www.baidu.com" >广州一日游如何安排</a> </li><br>
                 <li><a href="http://www.baidu.com" >如何穷游西藏？</a></li> <br>
                 <li><a href="http://www.baidu.com" >北京的景点</a></li> <br>
+                <li><a href="http://www.baidu.com" >珠海有什么景点好玩的？</a></li> <br>
+                <li><a href="http://www.baidu.com" >广州一日游如何安排</a> </li><br>
+                <li><a href="http://www.baidu.com" >如何穷游西藏？</a></li> <br>
+                <li><a href="http://www.baidu.com" >北京的景点</a></li> <br>
+                <li><a href="http://www.baidu.com" >珠海有什么景点好玩的？</a></li> <br>
+                <li><a href="http://www.baidu.com" >广州一日游如何安排</a> </li><br>
+                <li><a href="http://www.baidu.com" >如何穷游西藏？</a></li> <br>
+                <li><a href="http://www.baidu.com" >北京的景点</a></li> <br>
+                <li><a href="http://www.baidu.com" >广州一日游如何安排</a> </li><br>
+                <li><a href="http://www.baidu.com" >如何穷游西藏？</a></li> <br>
+                <li><a href="http://www.baidu.com" >北京的景点</a></li> <br>
               </ul>
-              Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+              <!--Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>-->
+
+                <div class="pagination" align="center">
+            <ul>
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li class="pagination-dropdown dropup">
+                <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fui-triangle-up"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#fakelink">10–20</a></li>
+                  <li><a href="#fakelink">20–30</a></li>
+                  <li><a href="#fakelink">40–50</a></li>
+                </ul>
+              </li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div>
+
             </div>
-    </div>
-</div>
+    <!--</div>-->
+<!--</div>-->
 
 </font>
     <script src="{% static 'dist/js/vendor/jquery.min.js'%}"type="text/javascript"></script>
