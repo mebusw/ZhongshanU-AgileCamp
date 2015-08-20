@@ -22,5 +22,6 @@ urlpatterns = patterns('sina.views',
 	url(r'help','help'),
 	url(r'homepage','index'),
 	url(r'record','record'),
+    url(r'pie', 'pie'),
 )
 
