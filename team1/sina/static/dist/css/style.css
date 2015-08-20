@@ -29,8 +29,8 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	/*background:#ccff80;*/
-  background: url('../images/6.jpg') no-repeat;
+	background:#ffffff;
+  /*background: url('../images/6.jpg') no-repeat;*/
   background-size:cover;
   min-height:1100px;
   /*font-family: 'Open Sans', sans-serif;*/
