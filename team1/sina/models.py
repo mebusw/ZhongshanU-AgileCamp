@@ -9,3 +9,13 @@ class User(models.Model):
 
 	def _unicode_(self):
 		return self._usr
+
+class Question(object):
+	"""docstring for Question"""
+	_question = models.CharField(max_length=20000)
+	_comment = models.CharField(max_length=20000)
+
+	def __init__(self, arg):
+		super(Question, self).__init__()
+		self.arg = arg
+		
