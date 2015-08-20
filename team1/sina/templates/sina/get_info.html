@@ -1,0 +1,94 @@
+﻿ {% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+<link rel="stylesheet" type="text/css" href="{%static 'css_info/normalize.css'%}" />
+<link rel="stylesheet" type="text/css" href="{%static 'css_info/demo.css'%}" />
+
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="{%static 'css_info/component.css'%}" />
+
+<script src="{%static 'js_info/modernizr.custom.js'%}"></script>
+
+</head>
+<body>
+<section>
+	<form id="theForm" class="simform" autocomplete="off">
+		<div class="simform-inner">
+		<div style="text-align:center; font: 'MicroSoft YaHei';">
+			<ol class="questions">
+				<li>
+					<span><label for="q1">你想去哪儿?</label></span>
+					<input id="q1" name="q1" type="text"/>
+				</li>
+				<li>
+					<span><label for="q2">你想在什么时间去？</label></span>
+					<input id="q2" name="q2" type="text"/>
+				</li>
+				<li>
+					<span><label for="q3">你的队伍有几人?</label></span>
+					<input id="q3" name="q3" type="text"/>
+				</li>
+				<li>
+					<span><label for="q4">你从哪儿出发？</label></span>
+					<input id="q4" name="q4" type="text"/>
+				</li>
+				<li>
+					<span><label for="q5">你的预算是多少?</label></span>
+					<input id="q5" name="q5" type="text"/>
+				</li>
+				<li>
+					<span><label for="q6">你的备注和要求?</label></span>
+					<input id="q6" name="q6" type="text"/>
+				</li>
+			</ol><!-- /questions -->
+
+			<button class="submit" type="submit">提交信息</button>
+			</div>
+			<div class="controls">
+				<button class="next"></button>
+				<div class="progress"></div>
+				<span class="number">
+					<span class="number-current"></span>
+					<span class="number-total"></span>
+				</span>
+				<span class="error-message"></span>
+			</div><!-- / controls -->
+		</div><!-- /simform-inner -->
+		<span class="final-message"></span>
+	</form><!-- /simform -->			
+</section>
+
+<script type="text/javascript" src="{%static 'js_info/classie.js'%}"></script>
+<script type="text/javascript" src="{%static 'js_info/stepsForm.js'%}"></script>
+<script type="text/javascript">
+var theForm = document.getElementById( 'theForm' );
+
+new stepsForm( theForm, {
+	onSubmit : function( form ) {
+		// hide form
+		classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+		/*
+		form.submit()
+		or
+		AJAX request (maybe show loading indicator while we don't have an answer..)
+		*/
+
+		// let's just simulate something...
+		var messageEl = theForm.querySelector( '.final-message' );
+		messageEl.innerHTML = '谢谢你！请等待导游的联系';
+		classie.addClass( messageEl, 'show' );
+	}
+} );
+</script>
+
+
+
+</body>
+</html>
